@@ -60,55 +60,10 @@ const currentPhaseColor = computed(() => phases[currentPhaseIndex.value]?.color 
 </script>
 
 <template>
-  <!-- ── Widget haut-droite : timer + progression ── -->
-  <div
-    class="fixed right-4 top-3 z-50 flex items-center gap-3 px-3 py-1.5 rounded-full pointer-events-none"
-    style="background: rgba(0,0,0,0.5); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06);"
-  >
-    <!-- Temps écoulé -->
-    <div class="flex items-center gap-1.5 text-xs text-gray-400">
-      <div class="i-pixelarticons-clock w-3 h-3" :style="{ color: currentPhaseColor }" />
-      <span class="font-mono tabular-nums">
-        {{ Math.floor(elapsedSec / 60) }}:{{ String(elapsedSec % 60).padStart(2, '0') }}
-      </span>
-      <span v-if="totalSeconds" class="text-gray-600 text-[10px]">/ {{ totalMinutesParam }}min</span>
-    </div>
-
-    <!-- Séparateur -->
-    <div class="w-px h-3 bg-white/10"></div>
-
-    <!-- Barres de progression slides vs temps -->
-    <div class="hidden sm:flex items-center gap-2">
-      <div class="flex items-center gap-1">
-        <div class="i-pixelarticons-play w-2.5 h-2.5" :style="{ color: currentPhaseColor }" />
-        <div class="w-14 h-1 rounded-full bg-white/10 overflow-hidden">
-          <div
-            class="h-full rounded-full transition-all duration-500"
-            :style="{ width: (slideProgress * 100).toFixed(0) + '%', backgroundColor: currentPhaseColor }"
-          />
-        </div>
-      </div>
-      <div class="flex items-center gap-1">
-        <div class="i-pixelarticons-hourglass w-2.5 h-2.5 text-gray-500" />
-        <div class="w-14 h-1 rounded-full bg-white/10 overflow-hidden">
-          <div
-            class="h-full rounded-full bg-gray-500 transition-all duration-500"
-            :style="{ width: (timeProgress * 100).toFixed(0) + '%' }"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- Message d'état -->
-    <span class="hidden md:inline text-[10px] text-gray-500">
-      {{ statusText }}
-    </span>
-  </div>
-
   <!-- ── Barre de progression par phases en bas ── -->
   <div class="fixed bottom-0 left-0 right-0 z-50 pointer-events-none">
 
-    <!-- Label de phase + numéro de slide -->
+    <!-- Label de phase + timer discret + numéro de slide -->
     <div class="flex items-center justify-between px-4 mb-1">
       <div
         class="text-[10px] font-bold tracking-wider uppercase font-orbitron"
@@ -116,12 +71,32 @@ const currentPhaseColor = computed(() => phases[currentPhaseIndex.value]?.color 
       >
         {{ phases[currentPhaseIndex]?.label }}
       </div>
-      <div class="flex items-center gap-1 text-[11px]">
-        <span class="font-bold font-mono" :style="{ color: currentPhaseColor }">
-          {{ currentSlideNo }}
-        </span>
-        <span class="text-gray-600">/</span>
-        <span class="text-gray-600">{{ total }}</span>
+
+      <div class="flex items-center gap-2 text-[10px] font-mono text-gray-500 tabular-nums">
+        <!-- Timer discret -->
+        <div class="flex items-center gap-1">
+          <div class="i-pixelarticons-clock w-2.5 h-2.5 opacity-70" :style="{ color: currentPhaseColor }" />
+          <span>
+            {{ Math.floor(elapsedSec / 60) }}:{{ String(elapsedSec % 60).padStart(2, '0') }}
+          </span>
+          <span v-if="totalSeconds" class="text-gray-700">/ {{ totalMinutesParam }}m</span>
+        </div>
+
+        <!-- Statut -->
+        <span v-if="totalSeconds" class="text-gray-600">·</span>
+        <span v-if="totalSeconds" class="text-gray-600">{{ statusText }}</span>
+
+        <!-- Séparateur -->
+        <span class="text-gray-700 mx-1">|</span>
+
+        <!-- Numéro de slide -->
+        <div class="flex items-center gap-1 text-[11px]">
+          <span class="font-bold" :style="{ color: currentPhaseColor }">
+            {{ currentSlideNo }}
+          </span>
+          <span class="text-gray-600">/</span>
+          <span class="text-gray-600">{{ total }}</span>
+        </div>
       </div>
     </div>
 

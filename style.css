@@ -13,16 +13,16 @@
   font-family: 'Space Grotesk', system-ui, sans-serif;
 }
 
-.font-orbitron,
-.tron-title,
+.font-orbitron, .font-orbitron *,
+.tron-title, .tron-title *,
 h1, h2 {
   font-family: 'Orbitron', system-ui, sans-serif !important;
   letter-spacing: 0.02em;
 }
 
-.font-mono,
-code,
-pre {
+.font-mono, .font-mono *,
+code, code *,
+pre, pre * {
   font-family: 'JetBrains Mono', monospace !important;
 }
 
@@ -164,4 +164,21 @@ aside.slidev-side-editor {
 /* Cacher le Goto dialog (raccourci 'g') — c'est ce panel à droite avec la liste numérotée */
 #slidev-goto-dialog {
   display: none !important;
+}
+
+/* ── Slidev nav controls (fullscreen, prev/next…) — visibles sur thème noir ── */
+/* Le container a `bg-main` (= bg-black) qui se confond avec le fond. On lui donne un fond légèrement visible + bordure subtile. */
+nav.flex.flex-col > div.bg-main {
+  background: rgba(20, 20, 20, 0.85) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(8px);
+}
+
+.slidev-icon-btn {
+  color: rgba(255, 255, 255, 0.65) !important;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.slidev-icon-btn:hover {
+  color: rgba(255, 255, 255, 1) !important;
 }

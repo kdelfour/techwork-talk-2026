@@ -69,7 +69,7 @@ title: "Qui parle ?"
 <div class="grid grid-cols-3 gap-4 text-sm text-gray-400">
   <GlowCard color="cyan">
     <div class="text-tron-cyan font-bold mb-1 font-orbitron text-xs tracking-widest uppercase">Hier</div>
-    <div>Architecture, DDD, clean code,<br/>SOLID quasi religieux</div>
+    <div>Douze ans à râler quand<br/>on n'écrivait pas SOLID.<br/><span class="italic text-gray-500">Demandez à mes juniors.</span></div>
   </GlowCard>
 
   <GlowCard color="orange">
@@ -91,15 +91,17 @@ title: "Qui parle ?"
 </div>
 
 <!--
-**Intention** — crédibilité (CTO, 15 ans), positionnement (défenseur du craft, donc crédible pour parler de qualité), annonce subtile du fil rouge horlogerie.
+**Intention** — crédibilité (CTO, 15 ans), auto-dérision discrète pour désamorcer le côté "sage qui descend de la montagne", annonce subtile du fil rouge horlogerie.
 **Points clés** —
-- "15 ans de métier, dont une bonne partie à défendre les patterns"
-- "Aujourd'hui je vais raconter ce qui m'a fait bouger"
-- "Je ne suis pas un fanboy d'IA. Je suis un mec qui a un avis sur le code."
+- "15 ans de métier — dont une bonne partie à râler quand le code n'était pas SOLID."
+- petit sourire en coin sur "Demandez à mes juniors" — la salle comprend
+- "Aujourd'hui, l'IA dans nos projets, tous les jours."
+- "Et le sujet : ce que ça m'a fait changer dans mes standards."
+- "Je ne suis pas un fanboy d'IA. Je suis un mec qui a un avis sur le code, et qui a changé d'avis sur certaines choses."
 - mention discrète des montres : "Vous allez comprendre"
 **Connexion** — vers slide 3 : engager la salle
 **Repère temporel** — 0:30 → 2:00 (90s)
-**Jeu** — ralentir sur "défenseur du craft", regarder la salle. Sourire sur "fan de montres mécaniques".
+**Jeu** — ralentir sur "défenseur du craft", regarder la salle. Sourire en coin sur "Demandez à mes juniors" — laisser le petit rire de reconnaissance arriver. PAS d'auto-flagellation : on rit avec la salle, pas contre elle.
 -->
 
 ---
@@ -142,56 +144,50 @@ title: "Et au poignet ?"
 
 <TronGrid color="#a855f7" :opacity="0.10" />
 
-<div class="relative z-10 flex flex-col items-center justify-center h-full">
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
 
-<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-violet mb-6 font-orbitron">
+<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-violet mb-5 font-orbitron">
   Pendant qu'on y est…
 </div>
 
-<h1 class="text-5xl font-orbitron font-black text-center leading-tight mb-12">
+<h1 class="text-5xl font-orbitron font-black text-center leading-tight mb-10">
   Et au <GlowText color="#a855f7">poignet</GlowText>,<br/>
   vous portez quoi ?
 </h1>
 
-<div class="grid grid-cols-3 gap-6 max-w-5xl w-full px-8">
+<div class="grid grid-cols-2 gap-10 max-w-3xl w-full">
 
   <GlowCard color="cyan" :glow="true">
-    <div class="text-center">
-      <div class="i-tabler-clock-cog text-5xl text-tron-cyan mb-3" />
-      <div class="font-orbitron font-bold text-tron-cyan tracking-widest uppercase text-sm mb-2">Mécanique</div>
+    <div class="flex flex-col items-center text-center py-4">
+      <div class="i-tabler-clock-cog text-7xl text-tron-cyan mb-4" />
+      <div class="font-orbitron font-bold text-tron-cyan tracking-widest uppercase text-base mb-3">Mécanique</div>
       <div class="text-sm text-gray-400 leading-relaxed">
-        Remontage manuel,<br/>balancier, échappement.<br/>
-        <span class="italic">Le geste pur.</span>
+        Remontage manuel,<br/>balancier, échappement.
       </div>
-    </div>
-  </GlowCard>
-
-  <GlowCard color="violet" :glow="true">
-    <div class="text-center">
-      <div class="i-tabler-rotate-clockwise text-5xl text-tron-violet mb-3" />
-      <div class="font-orbitron font-bold text-tron-violet tracking-widest uppercase text-sm mb-2">Automatique</div>
-      <div class="text-sm text-gray-400 leading-relaxed">
-        Mécanique à remontage<br/>par le mouvement du poignet.<br/>
-        <span class="italic">L'hybride élégant.</span>
-      </div>
+      <div class="mt-3 text-xs text-tron-cyan/70 italic font-mono">Le geste pur.</div>
     </div>
   </GlowCard>
 
   <GlowCard color="orange" :glow="true">
-    <div class="text-center">
-      <div class="i-tabler-cpu text-5xl text-tron-orange mb-3" />
-      <div class="font-orbitron font-bold text-tron-orange tracking-widest uppercase text-sm mb-2">Quartz</div>
+    <div class="flex flex-col items-center text-center py-4">
+      <div class="i-tabler-cpu text-7xl text-tron-orange mb-4" />
+      <div class="font-orbitron font-bold text-tron-orange tracking-widest uppercase text-base mb-3">Quartz</div>
       <div class="text-sm text-gray-400 leading-relaxed">
-        Pile, oscillateur,<br/>moteur pas-à-pas.<br/>
-        <span class="italic">L'efficacité moderne.</span>
+        Pile, oscillateur,<br/>moteur pas-à-pas.
       </div>
+      <div class="mt-3 text-xs text-tron-orange/70 italic font-mono">L'efficacité moderne.</div>
     </div>
   </GlowCard>
 
 </div>
 
-<div class="mt-10 px-8 py-3 rounded-2xl bg-white/5 border border-white/10 text-base text-gray-400">
-  Levez la main. <span class="text-white">Souvenez-vous de votre catégorie.</span> Vous comprendrez pourquoi dans 30 minutes.
+<div class="mt-10 inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400">
+  <div class="i-tabler-hand-finger text-tron-violet text-base" />
+  <span>Levez la main</span>
+  <span class="text-gray-600">·</span>
+  <span class="text-white">souvenez-vous</span>
+  <span class="text-gray-600">·</span>
+  <span class="italic text-gray-500">on y revient dans 30 min</span>
 </div>
 
 </div>
@@ -200,11 +196,11 @@ title: "Et au poignet ?"
 **Intention** — second hook, prépare directement l'analogie horlogère qui va structurer l'Acte II. Crée un second rendez-vous mémorable avec la salle.
 **Points clés** —
 - "Pendant qu'on est dans le sondage, j'en ai un autre, plus inhabituel."
-- "Levez la main : qui porte une mécanique pure ?" *(compter)*
-- "Une automatique ?" *(compter)*
+- "Levez la main : qui porte une mécanique (manuelle ou automatique) ?" *(compter)*
 - "Une quartz ou montre connectée ?" *(compter)*
 - "Très bien. Souvenez-vous de votre catégorie. On y revient — promis."
 - Si quelqu'un dit "smartwatch", traiter comme quartz (oscillateur électronique).
+- L'automatique est rangée avec la mécanique (même architecture : balancier-spiral) — éviter la 3ᵉ catégorie qui dilue l'opposition narrative méca/quartz du reste du talk.
 **Connexion** — vers slide 5 (Acte I) : "Bon. On va commencer par parler de craft. Et de montres. Vous allez voir le lien."
 **Repère temporel** — 3:00 → 3:30 (30s, rapide, juste un sondage à la volée)
 **Jeu** — sourire, "ok il y a 3 horlogers passionnés dans la salle, parfait". Pas trop s'attarder, c'est juste planter une graine.
@@ -467,8 +463,8 @@ title: "La promesse implicite"
 </div>
 
 <div class="text-xl text-gray-400 italic max-w-2xl mx-auto leading-relaxed">
-  « You never actually own a Patek Philippe.<br/>
-  You merely look after it for the next generation. »
+  « On ne possède jamais vraiment une Patek Philippe.<br/>
+  On en est juste le gardien pour la génération suivante. »
 </div>
 
 <div class="mt-3 text-sm text-gray-600">
@@ -609,6 +605,152 @@ title: "Deux dates qui ont tout changé"
 -->
 
 ---
+title: "On est passé de la mécanique…"
+---
+
+<TronGrid color="#00d9ff" :opacity="0.07" />
+
+<div class="relative z-10 h-full flex flex-col px-12 py-4">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-cyan/80 mb-2 font-orbitron text-center">
+  Sous le verre
+</div>
+
+<h2 class="text-4xl font-orbitron font-black text-center mb-4 leading-tight">
+  On est passé de la <GlowText color="#00d9ff">mécanique</GlowText>…
+</h2>
+
+<div class="flex-1 min-h-0 grid grid-cols-2 gap-8 items-center">
+
+  <!-- Photo -->
+  <div class="flex flex-col items-center gap-2 min-h-0">
+    <img
+      src="/resources/clock-meca.jpg"
+      alt="Calibre mécanique Omega 3861"
+      class="rounded-2xl object-contain"
+      style="max-height: 280px; max-width: 100%; box-shadow: 0 0 40px rgba(0,217,255,0.35); border: 1px solid rgba(0,217,255,0.4);"
+    />
+    <div class="text-[10px] font-mono text-tron-cyan/80 tracking-[0.2em] uppercase">
+      Calibre Omega 3861 · Master Co-Axial
+    </div>
+  </div>
+
+  <!-- Schema -->
+  <div class="flex flex-col items-center gap-2 min-h-0">
+    <div
+      class="rounded-xl overflow-hidden bg-white flex"
+      style="max-height: 230px; box-shadow: 0 0 35px rgba(0,217,255,0.25); border: 2px solid rgba(0,217,255,0.5);"
+    >
+      <img
+        src="/resources/clock-mecanik-schema.jpeg"
+        alt="Vue éclatée d'un mouvement mécanique"
+        class="object-contain"
+        style="max-height: 230px; max-width: 100%;"
+      />
+    </div>
+    <div class="text-[10px] font-mono text-tron-cyan/80 tracking-[0.2em] uppercase">
+      Vue éclatée
+    </div>
+  </div>
+
+</div>
+
+<div class="mt-4 text-center text-sm font-mono text-gray-300">
+  <span class="text-tron-cyan font-bold">~ 130 pièces</span>
+  <span class="text-gray-600 mx-3">·</span>
+  oscillation à <span class="text-tron-cyan">4 Hz</span>
+  <span class="text-gray-600 mx-3">·</span>
+  8 ans de formation pour assembler
+</div>
+
+</div>
+
+<!--
+**Intention** — laisser la salle ressentir la beauté et la complexité du calibre mécanique avant de basculer sur la quartz.
+**Points clés** —
+- "Voilà ce qu'il y a sous le verre d'une montre suisse en 1972."
+- pointer la photo (l'objet) puis le schéma (la décortication)
+- "~ 130 pièces. Un balancier qui bat 4 fois par seconde. 8 ans de formation."
+- ne pas sourire — laisser la gravité du métier s'installer
+**Connexion** — vers slide suivante (quartz) : la phrase reste suspendue, "on est passé de la mécanique…"
+**Repère temporel** — 14:30 → 14:50 (~20s)
+**Jeu** — silence 3s sur l'image. Lire la stats à voix posée.
+-->
+
+---
+title: "…à la quartz."
+---
+
+<TronGrid color="#ff8c00" :opacity="0.07" />
+
+<div class="relative z-10 h-full flex flex-col px-12 py-4">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-orange/80 mb-2 font-orbitron text-center">
+  Sous le verre
+</div>
+
+<h2 class="text-4xl font-orbitron font-black text-center mb-4 leading-tight">
+  …à la <GlowText color="#ff8c00">quartz</GlowText>.
+</h2>
+
+<div class="flex-1 min-h-0 grid grid-cols-2 gap-8 items-center">
+
+  <!-- Photo -->
+  <div class="flex flex-col items-center gap-2 min-h-0">
+    <img
+      src="/resources/clock-quartz.jpg"
+      alt="Calibre quartz Grand Seiko 9F62A"
+      class="rounded-2xl object-contain"
+      style="max-height: 280px; max-width: 100%; box-shadow: 0 0 40px rgba(255,140,0,0.35); border: 1px solid rgba(255,140,0,0.4);"
+    />
+    <div class="text-[10px] font-mono text-tron-orange/80 tracking-[0.2em] uppercase">
+      Calibre Grand Seiko 9F62A
+    </div>
+  </div>
+
+  <!-- Schema -->
+  <div class="flex flex-col items-center gap-2 min-h-0">
+    <div
+      class="rounded-xl overflow-hidden bg-white flex"
+      style="max-height: 230px; box-shadow: 0 0 35px rgba(255,140,0,0.25); border: 2px solid rgba(255,140,0,0.5);"
+    >
+      <img
+        src="/resources/clock-quartz-schema.jpg"
+        alt="Vue éclatée d'un mouvement quartz"
+        class="object-contain"
+        style="max-height: 230px; max-width: 100%;"
+      />
+    </div>
+    <div class="text-[10px] font-mono text-tron-orange/80 tracking-[0.2em] uppercase">
+      Vue éclatée
+    </div>
+  </div>
+
+</div>
+
+<div class="mt-4 text-center text-sm font-mono text-gray-300">
+  <span class="text-tron-orange font-bold">~ 50 pièces</span>
+  <span class="text-gray-600 mx-3">·</span>
+  oscillation à <span class="text-tron-orange">32 768 Hz</span>
+  <span class="text-gray-600 mx-3">·</span>
+  sortie d'usine
+</div>
+
+</div>
+
+<!--
+**Intention** — choc visuel par contraste. La complexité d'avant disparaît. Une pile, un cristal, un circuit.
+**Points clés** —
+- "Et voilà ce qu'il y a dans une Seiko Astron."
+- pointer la photo : "C'est ça. Une pile, un circuit, et c'est tout."
+- pointer le schéma : "Pas de balancier. Pas d'échappement. Pas de spiral Breguet."
+- "~ 50 pièces. Un cristal qui vibre 32 768 fois par seconde. Sortie d'usine."
+**Connexion** — vers slide "Le choc" : "Imaginez maintenant qu'on vous met ÇA sous le nez."
+**Repère temporel** — 14:50 → 15:10 (~20s)
+**Jeu** — accélérer un peu le débit ici, la simplicité doit choquer. Puis silence avant la slide suivante.
+-->
+
+---
 title: "Le choc"
 ---
 
@@ -621,8 +763,8 @@ title: "Le choc"
 </div>
 
 <div class="text-3xl font-orbitron font-bold leading-relaxed text-center mb-10">
-  Une <GlowText color="#ff8c00">quartz japonaise</GlowText> à 100 $.<br/>
-  Plus précise qu'un <GlowText color="#00d9ff">chronomètre suisse</GlowText> à 10 000 $.
+  Une <GlowText color="#ff8c00">quartz japonaise</GlowText> à 100&nbsp;$.<br/>
+  Plus précise qu'un <GlowText color="#00d9ff">chronomètre suisse</GlowText> à 10&nbsp;000&nbsp;$.
 </div>
 
 <div class="grid grid-cols-3 gap-4 text-center w-full">
@@ -685,7 +827,7 @@ title: "Nos réactions classiques"
   - "Pas de finition main, c'est de la merde."
   - "Une pile ? Quel manque de noblesse."
   - "Ça ne durera jamais 100 ans."
-  - "Aucun garde-temps n'a jamais été conçu comme ça."
+  - "Aucun horloger digne de ce nom n'aurait signé ça."
   </div>
 </GlowCard>
 
@@ -697,7 +839,7 @@ title: "Nos réactions classiques"
   - "Pas de DDD, où sont les bounded contexts ?"
   - "Cette IA ne sait même pas ce qu'est l'inversion de dépendance."
   - "Ce sera ingérable en prod dans 6 mois."
-  - "Aucun code propre n'a jamais été conçu comme ça."
+  - "Aucun dev digne de ce nom n'aurait signé ça."
   </div>
 </GlowCard>
 
@@ -825,10 +967,18 @@ title: "La question gênante"
 title: "Punchline — Pas pour la précision"
 ---
 
-<Punchline color="#ff2e9a" size="6xl">
-  Si on porte une <GlowText color="#ff2e9a" font="orbitron">mécanique</GlowText>,<br/>
-  ce n'est pas pour la <GlowText color="#ff8c00" font="orbitron">précision</GlowText>.
-</Punchline>
+<TronGrid color="#ff2e9a" :opacity="0.08" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+  <div class="text-center text-6xl font-orbitron font-bold leading-tight max-w-5xl text-white">
+    Si on porte une <span class="text-tron-magenta">mécanique</span>,<br/>
+    ce n'est pas pour la <GlowText color="#ff8c00" font="orbitron">précision</GlowText>.
+  </div>
+
+  <div class="mt-12 h-1 w-32 rounded-full" style="background: #ff2e9a;"></div>
+
+</div>
 
 <!--
 **Intention** — punchline forte 1/3. Le coeur provocateur de l'Acte II.
@@ -900,67 +1050,182 @@ title: "D'où viennent vraiment nos standards ?"
 -->
 
 ---
-title: "Standards = béquilles cognitives"
+title: "Standard 1/4 — DRY"
 ---
 
-<TronGrid color="#ff8c00" :opacity="0.06" />
+<TronGrid color="#00d9ff" :opacity="0.07" />
 
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-cyan mb-8 font-orbitron">
+  Béquille cognitive · 1 / 4
+</div>
+
+<div class="rounded-3xl p-10 border-2 backdrop-blur-sm relative overflow-hidden max-w-3xl w-full" style="border-color: rgba(0,217,255,0.45); background-color: rgba(0,217,255,0.04); box-shadow: 0 0 60px rgba(0,217,255,0.18);">
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-30 pointer-events-none" style="background: #00d9ff;"></div>
 <div class="relative z-10">
-
-<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-orange mb-3 font-orbitron text-center">
-  Le coeur conceptuel
+<div class="text-[10px] tracking-[0.3em] uppercase mb-2 font-orbitron text-tron-cyan">Standard</div>
+<div class="font-mono font-black text-7xl text-white leading-none mb-2">DRY</div>
+<div class="text-sm text-gray-500 italic mb-8">Don't Repeat Yourself</div>
+<div class="flex items-center gap-3 mb-3">
+<div class="i-tabler-arrow-down text-xl text-tron-cyan"></div>
+<span class="text-[10px] tracking-[0.3em] uppercase text-gray-500 font-orbitron">Compense</span>
 </div>
-
-<h2 class="text-4xl font-orbitron font-black text-center mb-6">
-  Nos standards sont des <GlowText color="#ff8c00">béquilles cognitives</GlowText>
-</h2>
-
-<div class="grid grid-cols-2 gap-4">
-
-<StandardCard
-  name="DRY"
-  humanLimit="On ne peut pas maintenir 3 fois la même logique. On va en rater une lors d'un changement."
-  color="#00d9ff"
-/>
-
-<StandardCard
-  name="Design Patterns"
-  humanLimit="On ne peut pas tenir une architecture complexe en tête. On a besoin de structures mentales partagées."
-  color="#ff8c00"
-/>
-
-<StandardCard
-  name="Architecture Hexagonale"
-  humanLimit="Le couplage humainement ingérable provoque des bugs en cascade. On le contraint pour s'en sortir."
-  color="#ff2e9a"
-/>
-
-<StandardCard
-  name="Tests unitaires"
-  humanLimit="On fait des erreurs. Beaucoup. Tout le temps. Les tests sont notre garde-fou."
-  color="#a855f7"
-/>
+<div class="text-xl text-gray-200 leading-relaxed italic">
+« On ne peut pas maintenir 3 fois la même logique.<br/>
+On va en rater une lors d'un changement. »
+</div>
+</div>
+</div>
 
 </div>
 
-<div class="mt-4 text-center text-base text-gray-400 italic max-w-3xl mx-auto">
-  Tous ces standards sont <span class="text-white font-semibold">utiles et vrais</span>.<br/>
+<!--
+**Intention** — premier exemple de standard reframed comme béquille cognitive. Poser le pattern de raisonnement.
+**Points clés** —
+- "DRY. Don't Repeat Yourself."
+- "Pourquoi cette règle existe ?"
+- "Parce qu'on n'arrive pas à maintenir 3 copies cohérentes. Point."
+- "Ce n'est pas une vérité absolue. C'est une compensation."
+**Connexion** — vers slide suivante (Patterns) : "Deuxième exemple."
+**Repère temporel** — 23:00 → 23:25 (~25s)
+**Jeu** — poser, ne pas surjouer. C'est le 1er exemple, on installe le rythme.
+-->
+
+---
+title: "Standard 2/4 — Design Patterns"
+---
+
+<TronGrid color="#ff8c00" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-orange mb-8 font-orbitron">
+  Béquille cognitive · 2 / 4
+</div>
+
+<div class="rounded-3xl p-10 border-2 backdrop-blur-sm relative overflow-hidden max-w-3xl w-full" style="border-color: rgba(255,140,0,0.45); background-color: rgba(255,140,0,0.04); box-shadow: 0 0 60px rgba(255,140,0,0.18);">
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-30 pointer-events-none" style="background: #ff8c00;"></div>
+<div class="relative z-10">
+<div class="text-[10px] tracking-[0.3em] uppercase mb-2 font-orbitron text-tron-orange">Standard</div>
+<div class="font-mono font-black text-6xl text-white leading-none mb-2">Design Patterns</div>
+<div class="text-sm text-gray-500 italic mb-8">Gang of Four · 1994</div>
+<div class="flex items-center gap-3 mb-3">
+<div class="i-tabler-arrow-down text-xl text-tron-orange"></div>
+<span class="text-[10px] tracking-[0.3em] uppercase text-gray-500 font-orbitron">Compense</span>
+</div>
+<div class="text-xl text-gray-200 leading-relaxed italic">
+« On ne peut pas tenir une architecture complexe en tête.<br/>
+On a besoin de structures mentales partagées. »
+</div>
+</div>
+</div>
+
+</div>
+
+<!--
+**Intention** — deuxième exemple, accentuer le pattern : c'est une béquille pour LIMITE HUMAINE.
+**Points clés** —
+- "Design Patterns. Le bouquin du Gang of Four en 1994."
+- "Pourquoi ?"
+- "Parce qu'on n'arrive pas à expliquer une architecture sans vocabulaire commun."
+- "C'est une béquille pour notre incapacité à partager des structures complexes."
+**Connexion** — vers slide suivante (Hexagonale).
+**Repère temporel** — 23:25 → 23:50 (~25s)
+**Jeu** — même cadence que slide précédente, le rythme s'installe.
+-->
+
+---
+title: "Standard 3/4 — Architecture Hexagonale"
+---
+
+<TronGrid color="#ff2e9a" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-magenta mb-8 font-orbitron">
+  Béquille cognitive · 3 / 4
+</div>
+
+<div class="rounded-3xl p-10 border-2 backdrop-blur-sm relative overflow-hidden max-w-3xl w-full" style="border-color: rgba(255,46,154,0.45); background-color: rgba(255,46,154,0.04); box-shadow: 0 0 60px rgba(255,46,154,0.18);">
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-30 pointer-events-none" style="background: #ff2e9a;"></div>
+<div class="relative z-10">
+<div class="text-[10px] tracking-[0.3em] uppercase mb-2 font-orbitron text-tron-magenta">Standard</div>
+<div class="font-mono font-black text-6xl text-white leading-none mb-2">Architecture Hexagonale</div>
+<div class="text-sm text-gray-500 italic mb-8">Ports &amp; Adapters · Cockburn · 2005</div>
+<div class="flex items-center gap-3 mb-3">
+<div class="i-tabler-arrow-down text-xl text-tron-magenta"></div>
+<span class="text-[10px] tracking-[0.3em] uppercase text-gray-500 font-orbitron">Compense</span>
+</div>
+<div class="text-xl text-gray-200 leading-relaxed italic">
+« Le couplage humainement ingérable provoque des bugs en cascade.<br/>
+On le contraint pour s'en sortir. »
+</div>
+</div>
+</div>
+
+</div>
+
+<!--
+**Intention** — troisième exemple. Le rythme est installé, on accélère légèrement.
+**Points clés** —
+- "Hexagonale. Ports & Adapters. Cockburn, 2005."
+- "Pourquoi on impose un découplage strict ?"
+- "Parce que le couplage non contraint, on n'arrive pas à le suivre. Bugs en cascade."
+**Connexion** — vers slide suivante (Tests).
+**Repère temporel** — 23:50 → 24:15 (~25s)
+**Jeu** — un peu plus rapide, le pattern doit devenir évident pour la salle.
+-->
+
+---
+title: "Standard 4/4 — SOLID"
+---
+
+<TronGrid color="#a855f7" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-violet mb-6 font-orbitron">
+  Béquille cognitive · 4 / 4
+</div>
+
+<div class="rounded-3xl p-10 border-2 backdrop-blur-sm relative overflow-hidden max-w-3xl w-full" style="border-color: rgba(168,85,247,0.45); background-color: rgba(168,85,247,0.04); box-shadow: 0 0 60px rgba(168,85,247,0.18);">
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-30 pointer-events-none" style="background: #a855f7;"></div>
+<div class="relative z-10">
+<div class="text-[10px] tracking-[0.3em] uppercase mb-2 font-orbitron text-tron-violet">Standard</div>
+<div class="font-mono font-black text-7xl text-white leading-none mb-2">SOLID</div>
+<div class="text-sm text-gray-500 italic mb-8">Robert C. Martin · 2000</div>
+<div class="flex items-center gap-3 mb-3"><div class="i-tabler-arrow-down text-xl text-tron-violet"></div><span class="text-[10px] tracking-[0.3em] uppercase text-gray-500 font-orbitron">Compense</span></div>
+<div class="text-xl text-gray-200 leading-relaxed italic">
+« On ne sait pas écrire du code qui supporte le changement.<br/>
+On a besoin de cinq principes pour s'y obliger. »
+</div>
+</div>
+</div>
+
+<div class="mt-8 text-center text-lg text-gray-400 max-w-3xl">
+  Tous ces standards sont <span class="text-white font-semibold">vrais et utiles</span>.<br/>
   Mais ils existent <GlowText color="#ff8c00">parce que nous sommes humains</GlowText>.
 </div>
 
 </div>
 
 <!--
-**Intention** — démonstration sur 4 cas concrets que les standards compensent des limites humaines spécifiques.
+**Intention** — quatrième et dernier exemple, puis le climax du raisonnement : la phrase qui recadre tout. Écho rhétorique fort à la slide 18 où le dev en 2024 reproche à l'IA de ne pas être SOLID — maintenant on déconstruit pourquoi NOUS on en a besoin.
 **Points clés** —
-- "DRY. Pourquoi ? Parce qu'on n'arrive pas à maintenir 3 copies cohérentes."
-- "Patterns. Pourquoi ? Parce qu'on a besoin de structures mentales pour penser le code à plusieurs."
-- "Hexagonale. Pourquoi ? Parce que le couplage non contraint dépasse notre capacité à gérer."
-- "Tests. Pourquoi ? Parce qu'on se trompe. Tout le temps."
-- "Ces standards ne sont pas faux. Ils sont vrais POUR NOUS."
-**Connexion** — vers slide 18 : et si on les regardait de plus près ?
-**Repère temporel** — 23:00 → 24:30 (90s)
-**Jeu** — passer chaque standard avec une intention différente. Pas trop didactique : on raconte, on ne récite pas.
+- "SOLID. Cinq lettres. Cinq principes. Robert C. Martin."
+- "Pourquoi cet acronyme existe ?"
+- "Parce que, sans règles strictes, on couple. On entasse les responsabilités. On rend le code rigide."
+- "C'est une béquille pour notre incapacité à concevoir naturellement du code qui supporte le changement."
+- pause
+- "Vous vous souvenez de la phrase de tout à l'heure ? *C'est pas SOLID, ça ne respecte rien.* Eh bien."
+- "Ces 4 standards ne sont pas faux. Ils sont VRAIS."
+- "Mais ils existent parce que nous sommes humains."
+- silence — c'est LA phrase qui ouvre la suite
+**Note** — les tests unitaires sont volontairement absents de cette liste. Eux restent nécessaires même avec l'IA (les tests de comportement sont la spec exécutable — voir Acte III).
+**Connexion** — vers slide "Le parallèle exact" : maintenant qu'on a posé ça, regardons les montres.
+**Repère temporel** — 24:15 → 24:45 (~30s — un peu plus, à cause du climax)
+**Jeu** — RALENTIR sur la phrase finale. Laisser un long silence après "humains". Ne pas enchaîner.
 -->
 
 ---
@@ -971,62 +1236,100 @@ title: "Le parallèle exact"
 
 <div class="relative z-10 flex flex-col items-center justify-center h-full max-w-4xl mx-auto px-8">
 
-<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-orange mb-8 font-orbitron text-center">
+<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-orange mb-10 font-orbitron text-center">
   Le parallèle exact
 </div>
 
 <div class="space-y-6 w-full">
 
 <div class="grid grid-cols-[auto_1fr_auto_1fr] gap-4 items-center text-lg">
-  <div class="font-orbitron text-tron-violet text-sm tracking-wider">TOURBILLON</div>
-  <div class="text-gray-300 italic">compense la gravité sur le balancier</div>
-  <div class="text-gray-600 text-2xl">→</div>
-  <div class="text-white">workaround d'une <span class="text-tron-orange">contrainte physique</span></div>
+<div class="font-orbitron text-tron-violet text-sm tracking-wider">TOURBILLON</div>
+<div class="text-gray-300 italic">compense la gravité sur le balancier</div>
+<div class="text-gray-600 text-2xl">→</div>
+<div class="text-white">workaround d'une <span class="text-tron-orange">contrainte physique</span></div>
 </div>
 
 <NeonDivider color="#ff8c00" />
 
 <div class="grid grid-cols-[auto_1fr_auto_1fr] gap-4 items-center text-lg">
-  <div class="font-orbitron text-tron-cyan text-sm tracking-wider">SOLID</div>
-  <div class="text-gray-300 italic">compense notre incapacité à tenir tête à 50K lignes</div>
-  <div class="text-gray-600 text-2xl">→</div>
-  <div class="text-white">workaround d'une <span class="text-tron-orange">contrainte cognitive</span></div>
+<div class="font-orbitron text-tron-cyan text-sm tracking-wider">SOLID</div>
+<div class="text-gray-300 italic">compense notre incapacité à tenir tête à 50K lignes</div>
+<div class="text-gray-600 text-2xl">→</div>
+<div class="text-white">workaround d'une <span class="text-tron-orange">contrainte cognitive</span></div>
 </div>
 
 </div>
 
-<div class="mt-12 text-center text-2xl font-orbitron font-bold">
-  Les complications horlogères sont <GlowText color="#00d9ff">magnifiques</GlowText>
-  parce qu'on a su les inventer <GlowText color="#ff8c00">SANS électronique</GlowText>.
-</div>
-
-<div class="mt-4 text-center text-2xl font-orbitron font-bold text-gray-300">
-  Nos patterns sont magnifiques parce qu'on a su faire <GlowText color="#ff8c00">SANS IA</GlowText>.
+<div class="mt-12 text-center text-xl font-orbitron text-gray-300">
+  Même structure. <span class="text-white">Deux contraintes différentes.</span>
 </div>
 
 </div>
 
 <!--
-**Intention** — sceller le parallèle conceptuel : tourbillon = SOLID, contrainte physique = contrainte cognitive.
+**Intention** — sceller le parallèle conceptuel : tourbillon = SOLID, contrainte physique = contrainte cognitive. Pédagogique, on pose les fondations avant la punchline de la slide suivante.
 **Points clés** —
-- "Mettons les deux côte à côte. Tourbillon : compense une contrainte physique. SOLID : compense une contrainte cognitive."
+- "Mettons les deux côte à côte."
+- "Le tourbillon : compense la gravité qui dérègle le balancier. Une contrainte physique."
+- "SOLID : compense notre incapacité à tenir 50 000 lignes en tête. Une contrainte cognitive."
 - "Même structure. Une contrainte qui engendre une réponse esthétique."
-- "Et c'est ça qui les rend BEAUX. C'est qu'on a su faire SANS l'outil qui aurait évité la contrainte."
-- "Sans électronique. Sans IA."
-- "Ce sont des solutions qui font notre fierté PARCE QUE c'était difficile."
-**Connexion** — vers slide 19 : la punchline acte II.
-**Repère temporel** — 24:30 → 26:00 (90s)
-**Jeu** — pédagogique mais pas plat. Insister sur "magnifiques" — la beauté n'est pas niée, elle est expliquée.
+**Connexion** — vers slide suivante : "Et ce qui suit, c'est ce que ça veut dire pour leur beauté."
+**Repère temporel** — 24:45 → 25:30 (~45s)
+**Jeu** — pédagogique mais pas plat. Pointer alternativement les deux lignes en parlant.
+-->
+
+---
+title: "Magnifiques sans"
+---
+
+<TronGrid color="#ff8c00" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full max-w-5xl mx-auto px-12">
+
+<div class="text-center text-3xl font-orbitron font-bold leading-relaxed mb-8">
+Les complications horlogères sont <GlowText color="#00d9ff">magnifiques</GlowText><br/>
+parce qu'on a su les inventer <GlowText color="#ff8c00">SANS électronique</GlowText>.
+</div>
+
+<div class="my-6 h-px w-32 bg-white/15"></div>
+
+<div class="text-center text-3xl font-orbitron font-bold leading-relaxed text-gray-200">
+Nos patterns sont magnifiques<br/>
+parce qu'on a su faire <GlowText color="#ff8c00">SANS IA</GlowText>.
+</div>
+
+</div>
+
+<!--
+**Intention** — révélation philosophique du parallèle. La beauté de la béquille TIENT à la difficulté qu'elle a fallu surmonter. Quand l'outil change, la beauté change de nature.
+**Points clés** —
+- silence 2-3s sur la 1re ligne
+- "Le tourbillon, ce n'est pas beau parce qu'il est précieux. C'est beau parce qu'on a inventé une mécanique qui résout la gravité — sans batterie, sans électronique, juste avec des engrenages."
+- pause
+- "Eh bien nos patterns, c'est pareil."
+- 2e ligne : "Magnifiques parce qu'on a su faire SANS IA."
+- "Ce sont des solutions qui font notre fierté PRÉCISÉMENT parce que c'était difficile."
+**Connexion** — vers slide "Punchline — Complications cognitives" : la cristallisation finale de l'Acte II.
+**Repère temporel** — 25:30 → 26:00 (~30s)
+**Jeu** — TRÈS LENT. Chaque mot pèse. La 2e ligne est plus douce, presque triste — c'est ce qu'on est en train de regarder différemment.
 -->
 
 ---
 title: "Punchline — Complications cognitives"
 ---
 
-<Punchline color="#ff8c00" size="6xl">
-  Nos standards sont des<br/>
-  <GlowText color="#ff8c00" font="orbitron">complications cognitives</GlowText>.
-</Punchline>
+<TronGrid color="#ff8c00" :opacity="0.08" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+  <div class="text-center text-6xl font-orbitron font-bold leading-tight max-w-5xl text-white">
+    Nos standards sont des<br/>
+    <GlowText color="#ff8c00" font="orbitron">complications cognitives</GlowText>.
+  </div>
+
+  <div class="mt-12 h-1 w-32 rounded-full" style="background: #ff8c00;"></div>
+
+</div>
 
 <!--
 **Intention** — punchline forte 2/3. Cristalliser ce qu'on vient de démontrer.
@@ -1176,9 +1479,58 @@ title: "Maintenance → Régénération"
 - "Maintenant, on peut optimiser pour la RÉGÉNÉRATION."
 - "Si je peux régénérer un module en 5 minutes à partir de spécifs claires, je n'ai pas besoin qu'il soit refactorable à la main par un humain expert."
 - "Comme la quartz : on ne la révise pas, on change le mouvement."
-**Connexion** — vers slide 23 : nouveaux critères.
-**Repère temporel** — 29:00 → 30:30 (90s)
+**Connexion** — vers slide "Confession" : anecdote perso pour ancrer le concept.
+**Repère temporel** — 29:00 → 30:00 (60s — un peu réduit pour faire place à la slide d'anecdote)
 **Jeu** — concept central. Articuler "régénération" plusieurs fois. Insister sur le fait que ça change l'optimisation.
+-->
+
+---
+title: "Mon premier deuil de code"
+---
+
+<TronGrid color="#ff2e9a" :opacity="0.06" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-magenta mb-8 font-orbitron">
+  Confession
+</div>
+
+<div class="max-w-3xl text-center">
+
+<div class="text-3xl font-orbitron font-bold leading-tight mb-8">
+La première fois que j'ai jeté <span class="text-tron-magenta">400 lignes</span><br/>
+pour les régénérer en <span class="text-tron-cyan">2 minutes</span>…<br/>
+<span class="text-white">j'ai fait un mini-deuil.</span>
+</div>
+
+<div class="text-lg text-gray-300 leading-relaxed italic mb-10 max-w-2xl mx-auto">
+Ce code, je l'avais peaufiné.<br/>
+Noms de variables philosophiquement justes.<br/>
+Tests bien rangés.<br/>
+<span class="text-white not-italic">L'IA l'a refait. Différent. Et fonctionnel.</span>
+</div>
+
+<div class="text-2xl font-orbitron font-bold text-tron-magenta">
+J'en parle à mon thérapeute.
+</div>
+
+</div>
+
+</div>
+
+<!--
+**Intention** — RESPIRATION. Acte III était jusqu'ici très conceptuel (maintenance → régénération). La salle a besoin d'une histoire vraie pour ancrer ça. Et d'un rire — surtout après la déconstruction de l'Acte II.
+**Points clés** —
+- "Je vais vous raconter une vraie anecdote."
+- "Premier paragraphe :" lire posé, factuel — *"La première fois que j'ai jeté 400 lignes pour les régénérer en 2 minutes, j'ai fait un mini-deuil."*
+- pause 1s
+- "Deuxième paragraphe : pourquoi." — lire vulnérable, presque triste — *"Ce code, je l'avais peaufiné. Noms de variables philosophiquement justes. Tests bien rangés. L'IA l'a refait. Différent. Et fonctionnel."*
+- pause 2s, regarder la salle, sourire intérieur
+- punchline DEADPAN — *"J'en parle à mon thérapeute."* — le pince-sans-rire est crucial. Si tu ris en le disant, ça tombe à l'eau.
+**Connexion** — vers slide "Nouveaux critères" : maintenant qu'on a vécu la chose, regardons la grille.
+**Repère temporel** — 30:00 → 30:30 (~30s — court mais essentiel)
+**Jeu** — la slide REQUIERT un timing parfait. Lire chaque ligne avec l'intention différente : factuel → vulnérable → deadpan. La punchline DOIT être livrée le plus sérieux possible. C'est le silence d'1 seconde après "thérapeute" qui fait rire la salle, pas la phrase elle-même.
 -->
 
 ---
@@ -1187,70 +1539,200 @@ title: "Nouveaux critères de qualité"
 
 <TronGrid color="#ff2e9a" :opacity="0.08" />
 
-<div class="relative z-10">
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
 
 <div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-magenta mb-6 font-orbitron text-center">
   Les nouveaux critères de qualité
 </div>
 
-<h2 class="text-4xl font-orbitron font-black text-center mb-8">
-  Ce qui compte <GlowText color="#ff2e9a">maintenant</GlowText>
-</h2>
+<h1 class="text-6xl font-orbitron font-black text-center mb-8 leading-tight">
+  Ce qui compte<br/>
+  <GlowText color="#ff2e9a">maintenant</GlowText>.
+</h1>
 
-<div class="grid grid-cols-2 gap-4">
-
-<GlowCard color="cyan">
-  <div class="flex items-center gap-3 mb-2">
-    <div class="i-tabler-message-language text-2xl text-tron-cyan" />
-    <div class="font-orbitron text-tron-cyan font-bold">Promptabilité</div>
-  </div>
-  <div class="text-sm text-gray-400">Le code peut-il être régénéré à partir d'une spec courte ?</div>
-</GlowCard>
-
-<GlowCard color="violet">
-  <div class="flex items-center gap-3 mb-2">
-    <div class="i-tabler-checkbox text-2xl text-tron-violet" />
-    <div class="font-orbitron text-tron-violet font-bold">Convention forte</div>
-  </div>
-  <div class="text-sm text-gray-400">Tout le repo suit-il les mêmes patterns que l'IA peut anticiper ?</div>
-</GlowCard>
-
-<GlowCard color="orange">
-  <div class="flex items-center gap-3 mb-2">
-    <div class="i-tabler-test-pipe text-2xl text-tron-orange" />
-    <div class="font-orbitron text-tron-orange font-bold">Couverture exécutable</div>
-  </div>
-  <div class="text-sm text-gray-400">Les tests vérifient-ils le comportement, sans dépendre de l'implémentation ?</div>
-</GlowCard>
-
-<GlowCard color="magenta">
-  <div class="flex items-center gap-3 mb-2">
-    <div class="i-tabler-refresh-dot text-2xl text-tron-magenta" />
-    <div class="font-orbitron text-tron-magenta font-bold">Refactorabilité par régénération</div>
-  </div>
-  <div class="text-sm text-gray-400">Combien de temps pour refaire ce module si on le jette ?</div>
-</GlowCard>
+<div class="text-xl text-gray-300 max-w-2xl text-center leading-relaxed">
+  Quatre critères pour le code qui se <span class="text-white font-semibold">régénère</span>.
+</div>
 
 </div>
 
-<div class="mt-6 text-center text-base text-gray-500 italic">
+<!--
+**Intention** — slide-charnière. On a posé le shift conceptuel (maintenance → régénération). On annonce maintenant la grille concrète qui en découle. Préparer la salle aux 4 slides suivantes.
+**Points clés** —
+- "On vient de voir le shift : maintenance vers régénération."
+- "Concrètement, qu'est-ce qui compte quand on optimise pour la régénération ?"
+- "Quatre critères. Je vous les passe en revue."
+- (lire les 4 noms des pastilles à voix haute, brièvement)
+**Connexion** — vers la séquence des 4 critères qui suit.
+**Repère temporel** — 30:15 → 30:30 (~15s, transition rapide)
+**Jeu** — annoncer, ne pas s'attarder. Les 4 slides suivantes font le détail.
+-->
+
+---
+title: "Critère 1/4 — Promptabilité"
+---
+
+<TronGrid color="#00d9ff" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-cyan mb-8 font-orbitron">
+  Nouveau critère · 1 / 4
+</div>
+
+<div class="rounded-3xl p-10 border-2 backdrop-blur-sm relative overflow-hidden max-w-3xl w-full" style="border-color: rgba(0,217,255,0.45); background-color: rgba(0,217,255,0.04); box-shadow: 0 0 60px rgba(0,217,255,0.18);">
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-30 pointer-events-none" style="background: #00d9ff;"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4"><div class="i-tabler-message-language text-2xl text-tron-cyan"></div><div class="text-[10px] tracking-[0.3em] uppercase font-orbitron text-tron-cyan">Critère</div></div>
+<div class="font-mono font-black text-6xl text-white leading-none mb-3">Promptabilité</div>
+<div class="text-sm text-gray-500 italic mb-8">Le code régénérable depuis une spec courte</div>
+<div class="flex items-center gap-3 mb-3"><div class="i-tabler-help-circle text-xl text-tron-cyan"></div><span class="text-[10px] tracking-[0.3em] uppercase text-gray-500 font-orbitron">La question</span></div>
+<div class="text-xl text-gray-200 leading-relaxed italic">
+« Le code peut-il être régénéré<br/>
+à partir d'une spec courte ? »
+</div>
+</div>
+</div>
+
+</div>
+
+<!--
+**Intention** — premier critère du nouveau référentiel qualité. Poser le rythme.
+**Points clés** —
+- "Si on optimise pour la régénération, voici ce qui compte."
+- "Premier critère : la promptabilité."
+- "Si je dois écrire 3 pages de prompt pour qu'on régénère un module, c'est mort. Le code est trop complexe pour son intention."
+- "Un code promptable, c'est un code dont on peut écrire la spec en quelques lignes."
+**Connexion** — vers slide suivante (Convention forte).
+**Repère temporel** — 30:30 → 30:55 (~25s)
+**Jeu** — poser le 1er critère, installer le format.
+-->
+
+---
+title: "Critère 2/4 — Convention forte"
+---
+
+<TronGrid color="#a855f7" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-violet mb-8 font-orbitron">
+  Nouveau critère · 2 / 4
+</div>
+
+<div class="rounded-3xl p-10 border-2 backdrop-blur-sm relative overflow-hidden max-w-3xl w-full" style="border-color: rgba(168,85,247,0.45); background-color: rgba(168,85,247,0.04); box-shadow: 0 0 60px rgba(168,85,247,0.18);">
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-30 pointer-events-none" style="background: #a855f7;"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4"><div class="i-tabler-checkbox text-2xl text-tron-violet"></div><div class="text-[10px] tracking-[0.3em] uppercase font-orbitron text-tron-violet">Critère</div></div>
+<div class="font-mono font-black text-6xl text-white leading-none mb-3">Convention forte</div>
+<div class="text-sm text-gray-500 italic mb-8">Le repo prévisible — l'IA anticipe</div>
+<div class="flex items-center gap-3 mb-3"><div class="i-tabler-help-circle text-xl text-tron-violet"></div><span class="text-[10px] tracking-[0.3em] uppercase text-gray-500 font-orbitron">La question</span></div>
+<div class="text-xl text-gray-200 leading-relaxed italic">
+« Tout le repo suit-il les mêmes patterns<br/>
+que l'IA peut anticiper ? »
+</div>
+</div>
+</div>
+
+</div>
+
+<!--
+**Intention** — deuxième critère. Reframe : la convention n'est plus pour les humains, elle est pour l'IA.
+**Points clés** —
+- "Deuxième critère : la convention forte."
+- "L'IA est une stagiaire qui apprend des patterns du repo en 30 secondes."
+- "Plus le repo est cohérent, plus elle est précise. Plus on lui demande peu, plus elle livre juste."
+- "Un repo qui mélange 3 styles, c'est un repo où l'IA hésite."
+**Connexion** — vers slide suivante (Couverture exécutable).
+**Repère temporel** — 30:55 → 31:20 (~25s)
+**Jeu** — même cadence que slide 1, le rythme s'installe.
+-->
+
+---
+title: "Critère 3/4 — Couverture exécutable"
+---
+
+<TronGrid color="#ff8c00" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-orange mb-8 font-orbitron">
+  Nouveau critère · 3 / 4
+</div>
+
+<div class="rounded-3xl p-10 border-2 backdrop-blur-sm relative overflow-hidden max-w-3xl w-full" style="border-color: rgba(255,140,0,0.45); background-color: rgba(255,140,0,0.04); box-shadow: 0 0 60px rgba(255,140,0,0.18);">
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-30 pointer-events-none" style="background: #ff8c00;"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4"><div class="i-tabler-test-pipe text-2xl text-tron-orange"></div><div class="text-[10px] tracking-[0.3em] uppercase font-orbitron text-tron-orange">Critère</div></div>
+<div class="font-mono font-black text-5xl text-white leading-none mb-3">Couverture exécutable</div>
+<div class="text-sm text-gray-500 italic mb-8">Le test devient la spec — pas l'implémentation</div>
+<div class="flex items-center gap-3 mb-3"><div class="i-tabler-help-circle text-xl text-tron-orange"></div><span class="text-[10px] tracking-[0.3em] uppercase text-gray-500 font-orbitron">La question</span></div>
+<div class="text-xl text-gray-200 leading-relaxed italic">
+« Les tests vérifient-ils le comportement,<br/>
+sans dépendre de l'implémentation ? »
+</div>
+</div>
+</div>
+
+</div>
+
+<!--
+**Intention** — troisième critère. Articuler la nuance test d'implémentation vs test de comportement (cf. ton point sur les tests qui restent nécessaires).
+**Points clés** —
+- "Troisième critère : la couverture exécutable."
+- "Les tests qui mockent 5 dépendances et vérifient *comment* le code marche — ils figent l'implémentation. Avec l'IA, ils empêchent la régénération."
+- "Les tests qui vérifient le COMPORTEMENT — ce que la fonction fait, pas comment — deviennent un super-pouvoir. Ils sont la spec exécutable."
+- "Un bon test, aujourd'hui, c'est un test qu'une IA peut lire et générer le code correspondant."
+**Connexion** — vers slide suivante (Refactorabilité), la pointe finale.
+**Repère temporel** — 31:20 → 31:45 (~25s)
+**Jeu** — c'est le critère qui désamorce la question "et les tests alors ?". Bien marquer la nuance.
+-->
+
+---
+title: "Critère 4/4 — Refactorabilité par régénération"
+---
+
+<TronGrid color="#ff2e9a" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+<div class="text-[10px] font-bold tracking-[0.4em] uppercase text-tron-magenta mb-6 font-orbitron">
+  Nouveau critère · 4 / 4
+</div>
+
+<div class="rounded-3xl p-10 border-2 backdrop-blur-sm relative overflow-hidden max-w-3xl w-full" style="border-color: rgba(255,46,154,0.45); background-color: rgba(255,46,154,0.04); box-shadow: 0 0 60px rgba(255,46,154,0.18);">
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-30 pointer-events-none" style="background: #ff2e9a;"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4"><div class="i-tabler-refresh-dot text-2xl text-tron-magenta"></div><div class="text-[10px] tracking-[0.3em] uppercase font-orbitron text-tron-magenta">Critère</div></div>
+<div class="font-mono font-black text-4xl text-white leading-tight mb-3">Refactorabilité<br/>par régénération</div>
+<div class="text-sm text-gray-500 italic mb-8">Jeter et refaire — plus rapide que patcher</div>
+<div class="flex items-center gap-3 mb-3"><div class="i-tabler-help-circle text-xl text-tron-magenta"></div><span class="text-[10px] tracking-[0.3em] uppercase text-gray-500 font-orbitron">La question</span></div>
+<div class="text-xl text-gray-200 leading-relaxed italic">
+« Combien de temps pour refaire ce module<br/>
+si on le jette ? »
+</div>
+</div>
+</div>
+
+<div class="mt-8 text-center text-base text-gray-400 italic max-w-3xl">
   Notez ce qui n'est <span class="text-white font-bold">plus en haut de la liste</span>.
 </div>
 
 </div>
 
 <!--
-**Intention** — présenter concrètement les 4 critères qui prennent de l'importance dans un contexte humain+IA.
+**Intention** — quatrième critère + recadrage final : ces 4 critères remplacent l'ancienne hiérarchie.
 **Points clés** —
-- "Si on optimise pour la régénération, voici ce qui devient critique."
-- "Promptabilité : si je dois écrire 3 pages de prompt pour qu'on régénère, c'est mort."
-- "Convention forte : l'IA est une stagiaire qui apprend des patterns du repo. Plus c'est cohérent, plus elle est précise."
-- "Couverture exécutable : les tests qui vérifient l'implémentation deviennent un frein. Ceux qui vérifient le COMPORTEMENT deviennent un super-pouvoir."
-- "Refactorabilité par régénération : si je peux jeter et refaire en 10 min, je n'ai pas besoin de patterns hyper sophistiqués."
-- "Et notez : la pureté des couches, la rigueur SOLID stricte… ne sont plus en haut de la liste."
-**Connexion** — vers slide 24 : REX concret.
-**Repère temporel** — 30:30 → 32:00 (90s)
-**Jeu** — pédagogique et posé. C'est la liste à retenir.
+- "Quatrième critère : la refactorabilité par régénération."
+- "Si je peux jeter ce module et le refaire en 10 minutes avec l'IA, je n'ai pas besoin de patterns hyper sophistiqués pour le maintenir."
+- "C'est un changement de mentalité : on ne maintient plus, on régénère."
+- pause
+- "Et regardez ce qui n'est PLUS en haut de cette liste."
+- "La pureté des couches. La rigueur SOLID stricte. Le découplage parfait. Le découpage en 18 micro-services."
+- "Pas faux. Mais plus en tête."
+**Connexion** — vers slide REX : voilà ce que ça donne en pratique.
+**Repère temporel** — 31:45 → 32:15 (~30s — un peu plus, à cause du recadrage)
+**Jeu** — RALENTIR sur la phrase finale. Laisser le silence faire le boulot. La salle doit faire la liste mentale de ce qui dégringole.
 -->
 
 ---
@@ -1493,11 +1975,19 @@ title: "La qualité a changé, pas baissé"
 title: "Punchline finale"
 ---
 
-<Punchline color="#ff2e9a" size="6xl">
-  Nous ne <GlowText color="#ff8c00" font="orbitron">sacrifions</GlowText> pas la qualité.<br/>
-  Nous redéfinissons<br/>
-  <GlowText color="#ff2e9a" font="orbitron">ce que nous vendons</GlowText>.
-</Punchline>
+<TronGrid color="#ff2e9a" :opacity="0.08" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full px-12">
+
+  <div class="text-center text-6xl font-orbitron font-bold leading-tight max-w-5xl text-white">
+    Nous ne <GlowText color="#ff8c00" font="orbitron">sacrifions</GlowText> pas la qualité.<br/>
+    Nous redéfinissons<br/>
+    <GlowText color="#ff2e9a" font="orbitron">ce que nous vendons</GlowText>.
+  </div>
+
+  <div class="mt-12 h-1 w-32 rounded-full" style="background: #ff2e9a;"></div>
+
+</div>
 
 <!--
 **Intention** — punchline finale 3/3. Le talk se referme sur cette formule.
