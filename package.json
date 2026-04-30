@@ -1,0 +1,19 @@
+{
+  "name": "techwork-talk-2026",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export",
+    "presenter": "slidev --remote"
+  },
+  "dependencies": {
+    "@slidev/cli": "^51.0.0",
+    "@slidev/theme-default": "latest"
+  },
+  "devDependencies": {
+    "@iconify-json/pixelarticons": "^1.1.6",
+    "@iconify-json/tabler": "^1.1.0",
+    "@unocss/preset-icons": "^0.64.0"
+  }
+}

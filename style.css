@@ -1,0 +1,167 @@
+/* ── Typo : Orbitron (titres) + Space Grotesk (corps) + JetBrains Mono ── */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --slidev-font-family: 'Space Grotesk', system-ui, sans-serif;
+  --tron-cyan: #00d9ff;
+  --tron-orange: #ff8c00;
+  --tron-magenta: #ff2e9a;
+  --tron-violet: #a855f7;
+}
+
+* {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.font-orbitron,
+.tron-title,
+h1, h2 {
+  font-family: 'Orbitron', system-ui, sans-serif !important;
+  letter-spacing: 0.02em;
+}
+
+.font-mono,
+code,
+pre {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* ── Fond noir pur ── */
+.slidev-layout,
+.slidev-page,
+body,
+#app {
+  background: #000 !important;
+}
+
+.slidev-layout {
+  background: #000 !important;
+  color: #e5e7eb;
+}
+
+/* ── Centrage vertical ── */
+.slidev-page > .slidev-layout {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  height: 100% !important;
+}
+
+.slidev-layout > div:not(.fixed):not([style*="position: fixed"]) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ── Glow text pulsé multi-couleurs ── */
+.glow-pulse {
+  animation: glow-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    text-shadow: 0 0 10px var(--glow-color, #00d9ff), 0 0 30px var(--glow-color, #00d9ff);
+  }
+  50% {
+    text-shadow: 0 0 25px var(--glow-color, #00d9ff), 0 0 60px var(--glow-color, #00d9ff), 0 0 90px var(--glow-color, #00d9ff);
+  }
+}
+
+.glow-pulse-cyan { --glow-color: var(--tron-cyan); }
+.glow-pulse-orange { --glow-color: var(--tron-orange); }
+.glow-pulse-magenta { --glow-color: var(--tron-magenta); }
+.glow-pulse-violet { --glow-color: var(--tron-violet); }
+
+/* ── Grille TRON perspective au sol ── */
+.tron-grid {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  perspective: 600px;
+  perspective-origin: 50% 0%;
+}
+
+.tron-grid::before {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -50%;
+  width: 200%;
+  height: 130%;
+  background-image:
+    linear-gradient(to right, var(--grid-color, var(--tron-cyan)) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color, var(--tron-cyan)) 1px, transparent 1px);
+  background-size: 60px 60px;
+  transform: rotateX(60deg);
+  opacity: var(--grid-opacity, 0.12);
+  mask-image: linear-gradient(to top, black 30%, transparent 80%);
+  -webkit-mask-image: linear-gradient(to top, black 30%, transparent 80%);
+}
+
+/* ── Light streaks (séparateurs d'actes) ── */
+.light-streak {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--streak-color, var(--tron-cyan)), transparent);
+  filter: blur(1px);
+  animation: streak-slide 3s linear infinite;
+}
+
+@keyframes streak-slide {
+  0% { transform: translateX(-100vw); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(100vw); opacity: 0; }
+}
+
+/* ── Punchline reveal ── */
+.punchline-text {
+  font-family: 'Orbitron', system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+/* ── Code/Mono accent ── */
+.tech-tag {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.85em;
+  letter-spacing: 0;
+}
+
+/* ── Anti-aliasing pour glow propre ── */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Désactivation des menus Slidev qui prennent de la place ── */
+/* Cache le bouton 'list/menu' / 'edit' / 'goto' / 'overview' de la navbar Slidev */
+.slidev-icon-btn[title*="ist" i],
+.slidev-icon-btn[title*="enu" i],
+.slidev-icon-btn[title*="verview" i],
+.slidev-icon-btn[title*="dit" i],
+.slidev-icon-btn[title*="oto" i] {
+  display: none !important;
+}
+
+/* Cacher le SideEditor (panel d'édition à droite, raccourci 'e') */
+.slidev-side-editor,
+[class*="SideEditor"],
+.slidev-page-root > .relative > .slidev-side-editor,
+aside.slidev-side-editor {
+  display: none !important;
+}
+
+/* Cacher tout panel fixed plein écran qui pourrait apparaître (QuickOverview, etc.) */
+.slidev-page-root > .fixed.left-0.right-0.top-0.bg-main.select-none,
+.slidev-page-root .fixed.z-modal.bg-main.backdrop-blur-5px {
+  display: none !important;
+}
+
+/* Cacher le Goto dialog (raccourci 'g') — c'est ce panel à droite avec la liste numérotée */
+#slidev-goto-dialog {
+  display: none !important;
+}
