@@ -584,6 +584,24 @@
 
 ---
 
+## Slide 28b — L'IA, levier sur un projet dégradé · 37:30 → 38:15
+
+> Une objection qu'on me pose souvent : « Tout ça, c'est bien si ton repo est sain. Mais mon projet à moi, c'est déjà un champ de ruines. L'IA va juste empirer le bordel. »
+>
+> **[regarder la salle]**
+>
+> Sans pilote — oui. L'IA amplifie ce qu'elle trouve. Un repo incohérent, elle le rend incohérent plus vite, et à plus grande échelle.
+>
+> Mais calibrée par un expert, c'est l'inverse. Elle devient un **levier** : on lui impose une convention, on régénère la dette module par module, et la qualité remonte.
+>
+> **[poser]**
+>
+> La condition n'est pas négociable : il faut l'expert. Et ce n'est pas un réglage qu'on fait une fois — il faut continuer de la régler, garder cette façon de travailler saine.
+>
+> L'IA ne remplace pas le développeur senior. **Elle le complète.**
+
+---
+
 ## Slide 29 — La qualité a changé · 37:30 → 38:30
 
 > Donc, on revient à la question de départ.

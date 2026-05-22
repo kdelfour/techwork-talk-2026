@@ -1984,9 +1984,60 @@ title: "Ce que j'ai renforcé"
 - "Les frontières fonctionnelles. Pas la pureté Hexagonale stricte, mais des modules avec un contrat clair."
 - "Le jugement humain sur l'INTENTION. L'IA dit 'comment'. Le senior dit 'pourquoi'."
 - "La revue. Plus que jamais. Mais pas pour repérer un mauvais nom de variable. Pour vérifier le SENS."
-**Connexion** — vers slide 27 : la qualité a changé pas baissé.
+**Connexion** — vers slide "L'IA, levier sur un projet dégradé".
 **Repère temporel** — 35:30 → 37:30 (2 min)
 **Jeu** — énergie positive. C'est ce qu'on a GAGNÉ. Faire la bascule émotionnelle après le "abandonné".
+-->
+
+---
+title: "L'IA, levier sur un projet dégradé"
+---
+
+<TronGrid color="#ff2e9a" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full max-w-5xl mx-auto px-10">
+
+<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-magenta mb-3 font-orbitron text-center">
+  L'objection qu'on me pose souvent
+</div>
+
+<h2 class="text-3xl font-orbitron font-black text-center mb-8 leading-snug">
+  Un projet sans qualité ?<br/>
+  L'IA peut le <GlowText color="#ff2e9a">relever</GlowText>.
+</h2>
+
+<div class="grid grid-cols-2 gap-6 w-full mb-8">
+
+  <div class="p-5 rounded-2xl bg-tron-orange/5 border border-tron-orange/30">
+    <div class="text-xs tracking-widest uppercase text-tron-orange mb-2 font-orbitron">Sans pilote</div>
+    <div class="text-base text-gray-300 leading-snug">L'IA <span class="text-white">amplifie</span> le chaos qu'elle trouve. Un repo incohérent le reste — en plus rapide, en plus gros.</div>
+  </div>
+
+  <div class="p-5 rounded-2xl bg-tron-cyan/5 border border-tron-cyan/30">
+    <div class="text-xs tracking-widest uppercase text-tron-cyan mb-2 font-orbitron">Calibrée par un expert</div>
+    <div class="text-base text-gray-300 leading-snug">L'IA devient un <span class="text-white">levier</span> : convention imposée, dette régénérée module par module.</div>
+  </div>
+
+</div>
+
+<div class="text-center text-lg text-gray-400 italic">
+  À une condition : un expert qui la calibre — et qui continue de la régler.<br/>
+  L'IA ne remplace pas le dev senior. <GlowText color="#ff2e9a">Elle le complète.</GlowText>
+</div>
+
+</div>
+
+<!--
+**Intention** — traiter frontalement l'objection "et mon projet legacy / sans qualité ?". Retourner la peur : l'IA n'est pas qu'un risque pour la qualité, elle peut être le levier qui la relève — à condition d'être pilotée.
+**Points clés** —
+- "On me pose souvent la question : 'mon projet est déjà un champ de ruines, l'IA va empirer le bordel.'"
+- "Sans pilote : oui. L'IA amplifie ce qu'elle trouve. Un repo incohérent, elle le rend incohérent plus vite."
+- "Mais calibrée par un expert : elle devient un levier. On impose une convention, on régénère la dette module par module. La qualité monte."
+- "Condition non négociable : l'expert. Et ce n'est pas un réglage one-shot — il faut continuer de régler, de garder la pratique saine."
+- chute : "L'IA ne remplace pas le dev senior. Elle le complète."
+**Connexion** — vers slide "La qualité a changé, pas baissé" : la conclusion.
+**Repère temporel** — 37:30 → 38:15 (~45s — cumul +1:30 sur les repères suivants avec la slide "verdict")
+**Jeu** — ton d'ouverture, presque rassurant. C'est une main tendue à ceux qui partent d'un mauvais code.
 -->
 
 ---
