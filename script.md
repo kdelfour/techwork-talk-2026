@@ -470,7 +470,7 @@
 
 ---
 
-## Slide 24 — Maintenance → Régénération · 29:00 → 30:30
+## Slide 24 — Maintenance → Régénération · 29:00 → 30:00
 
 > Et là, il y a un glissement de paradigme. Et c'est le concept central de la deuxième moitié de ce talk.
 >
@@ -490,7 +490,7 @@
 
 ---
 
-## Slide 24b — Le sort des 4 complications · 30:30 → 31:15
+## Slide 24b — Le sort des 4 complications · 30:00 → 30:45
 
 > Avant d'aller plus loin, un retour en arrière. Souvenez-vous, dans l'Acte deux, des quatre béquilles : DRY, Design Patterns, Architecture Hexagonale, SOLID. La régénération, est-ce qu'elle les jette à la poubelle ?
 >
@@ -509,6 +509,26 @@
 > **[ralentir]**
 >
 > Aucun de ces principes ne disparaît. C'est leur version **dogmatique** qui tombe.
+
+---
+
+## Slide 24c — Mon premier deuil de code · 30:45 → 31:15
+
+> Je vais vous raconter une vraie anecdote. Une confession, même.
+>
+> **[factuel, posé]**
+>
+> La première fois que j'ai jeté quatre cents lignes de code pour les régénérer en deux minutes… j'ai fait un mini-deuil.
+>
+> **[pause — puis vulnérable, presque triste]**
+>
+> Ce code, je l'avais peaufiné. Des noms de variables philosophiquement justes. Des tests bien rangés. Et l'IA l'a refait. Différent. Et fonctionnel.
+>
+> **[pause 2s, regarder la salle]**
+>
+> J'en parle à mon thérapeute.
+>
+> **[deadpan absolu — ne pas sourire. C'est le silence d'une seconde après « thérapeute » qui fait rire la salle, pas la phrase.]**
 
 ---
 
