@@ -45,15 +45,15 @@ Produit `slides-export.pdf` à la racine.
 
 ## Structure du deck
 
-29 slides en 3 actes :
+44 slides en 3 actes :
 
 | Acte | Slides | Couleur dominante | Durée cible |
 |---|---|---|---|
-| Intro | 1–3 | gris/cyan | ~1 min |
-| **I — Construction** | 4–8 | cyan `#00d9ff` | ~12 min |
-| **II — Déconstruction** | 9–19 | orange `#ff8c00` | ~15 min |
-| **III — Reconstruction** | 20–27 | magenta `#ff2e9a` | ~10 min |
-| Final | 28–29 | violet | ~3 min |
+| Intro | 1–4 | gris/cyan | ~3 min |
+| **I — Construction** | 5–10 | cyan `#00d9ff` | ~8 min |
+| **II — Déconstruction** | 11–27 | orange `#ff8c00` | ~15 min |
+| **III — Reconstruction** | 28–41 | magenta `#ff2e9a` | ~12 min |
+| Final | 42–44 | violet | ~2 min |
 
 Voir le design complet dans [`docs/superpowers/specs/2026-04-30-techwork-talk-design.md`](./docs/superpowers/specs/2026-04-30-techwork-talk-design.md).
 

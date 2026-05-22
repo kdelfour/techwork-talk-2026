@@ -1479,9 +1479,75 @@ title: "Maintenance → Régénération"
 - "Maintenant, on peut optimiser pour la RÉGÉNÉRATION."
 - "Si je peux régénérer un module en 5 minutes à partir de spécifs claires, je n'ai pas besoin qu'il soit refactorable à la main par un humain expert."
 - "Comme la quartz : on ne la révise pas, on change le mouvement."
-**Connexion** — vers slide "Confession" : anecdote perso pour ancrer le concept.
+**Connexion** — vers slide "Le sort des 4 complications" : on ferme la boucle des 4 béquilles de l'Acte II.
 **Repère temporel** — 29:00 → 30:00 (60s — un peu réduit pour faire place à la slide d'anecdote)
 **Jeu** — concept central. Articuler "régénération" plusieurs fois. Insister sur le fait que ça change l'optimisation.
+-->
+
+---
+title: "Le sort des 4 complications"
+---
+
+<TronGrid color="#ff2e9a" :opacity="0.07" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full max-w-5xl mx-auto px-10">
+
+<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-magenta mb-2 font-orbitron text-center">
+  Retour sur nos 4 béquilles
+</div>
+
+<h2 class="text-2xl font-orbitron font-black text-center mb-6 leading-snug">
+  La régénération ne les <span class="text-gray-500 line-through">jette</span> pas.<br/>
+  Elle les <GlowText color="#ff2e9a">recalibre</GlowText>.
+</h2>
+
+<div class="w-full divide-y divide-white/10">
+
+  <div class="grid grid-cols-[210px_160px_1fr] gap-5 items-center py-2.5">
+    <div class="font-mono font-black text-lg text-tron-cyan">DRY</div>
+    <div class="font-orbitron text-[10px] tracking-[0.25em] uppercase text-tron-cyan">tient</div>
+    <div class="text-gray-300 text-base leading-snug">Change d'échelle — du fichier au repo entier. Ça devient la <span class="text-white">convention forte</span>.</div>
+  </div>
+
+  <div class="grid grid-cols-[210px_160px_1fr] gap-5 items-center py-2.5">
+    <div class="font-mono font-black text-lg text-tron-orange">Design Patterns</div>
+    <div class="font-orbitron text-[10px] tracking-[0.25em] uppercase text-tron-orange">se scinde</div>
+    <div class="text-gray-300 text-base leading-snug">Le vocabulaire partagé reste. L'<span class="text-white">abstraction prophylactique</span> tombe.</div>
+  </div>
+
+  <div class="grid grid-cols-[210px_160px_1fr] gap-5 items-center py-2.5">
+    <div class="font-mono font-black text-lg text-tron-magenta">Hexagonale</div>
+    <div class="font-orbitron text-[10px] tracking-[0.25em] uppercase text-tron-magenta">s'assouplit</div>
+    <div class="text-gray-300 text-base leading-snug">Pureté stricte des couches → <span class="text-white">frontières fonctionnelles</span> avec contrat explicite.</div>
+  </div>
+
+  <div class="grid grid-cols-[210px_160px_1fr] gap-5 items-center py-2.5">
+    <div class="font-mono font-black text-lg text-tron-violet">SOLID</div>
+    <div class="font-orbitron text-[10px] tracking-[0.25em] uppercase text-tron-violet">se contextualise</div>
+    <div class="text-gray-300 text-base leading-snug">Le curseur bouge selon que le code est <span class="text-white">régénérable ou non</span>.</div>
+  </div>
+
+</div>
+
+<div class="mt-6 text-center text-lg text-gray-400 italic">
+  Aucun de ces principes ne disparaît.<br/>
+  C'est leur version <GlowText color="#ff8c00">dogmatique</GlowText> qui tombe.
+</div>
+
+</div>
+
+<!--
+**Intention** — fermer la boucle ouverte en Acte II. Les 4 béquilles (DRY, Patterns, Hexagonale, SOLID) ne sont pas "abandonnées" en bloc : chacune a un sort distinct. Contre-pied au ton "liste de renoncements" et raccord avec la posture "je porte les deux".
+**Points clés** —
+- "Souvenez-vous des 4 béquilles de l'Acte II. La régénération, est-ce qu'elle les jette ? Non. Elle les déplace."
+- DRY → "tient, et monte d'un cran : du fichier au repo. C'est la convention forte."
+- Patterns → "se scinde : le vocabulaire partagé reste, l'abstraction prophylactique tombe."
+- Hexagonale → "s'assouplit : frontières fonctionnelles, pas pureté stricte."
+- SOLID → "se contextualise : le curseur bouge selon régénérable ou non."
+- chute : "Aucun principe ne disparaît. C'est leur version DOGMATIQUE qui tombe."
+**Connexion** — vers slide "Mon premier deuil de code" : on a réglé le sort des standards, place au vécu.
+**Repère temporel** — 30:00 → 30:45 (~45s — décale les repères suivants de +45s, voir note timing)
+**Jeu** — rythme de tableau : pointer chaque ligne. Ralentir sur la chute "version dogmatique".
 -->
 
 ---

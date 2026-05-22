@@ -388,7 +388,7 @@
 >
 > **Architecture Hexagonale**. Magnifique. Pourquoi ? Parce que le couplage non contraint dépasse notre capacité humaine à raisonner. Au-delà de cinquante mille lignes de code, on est perdus.
 >
-> **Tests unitaires**. Magnifiques. Pourquoi ? Parce qu'on fait des erreurs. Beaucoup. Tout le temps.
+> **SOLID**. Cinq principes. Magnifiques. Pourquoi ? Parce que, livrés à nous-mêmes, on ne sait pas écrire du code qui encaisse le changement. On a besoin de cinq règles pour s'y *obliger*.
 >
 > **[regarder la salle]**
 >
@@ -487,6 +487,28 @@
 > **Régénération > Réparation.**
 >
 > Ça ne veut pas dire qu'on jette la maintenance partout. Ça veut dire qu'on a maintenant un curseur entre les deux. Et ce curseur, on le règle selon la situation.
+
+---
+
+## Slide 24b — Le sort des 4 complications · 30:00 → 30:45
+
+> Avant d'aller plus loin, un retour en arrière. Souvenez-vous, dans l'Acte deux, des quatre béquilles : DRY, Design Patterns, Architecture Hexagonale, SOLID. La régénération, est-ce qu'elle les jette à la poubelle ?
+>
+> **[regarder la salle]**
+>
+> Non. Elle les déplace. Et pas toutes au même endroit.
+>
+> **DRY** tient. Mieux : il monte d'un cran. Ce n'est plus « ne te répète pas dans ce fichier », c'est « tout le repo reste cohérent ». DRY devient la convention forte.
+>
+> **Les Design Patterns** se scindent. Le vocabulaire partagé — Repository, Adapter — reste utile, pour nous comme pour l'IA. Mais l'abstraction qu'on extrait « au cas où » : terminé.
+>
+> **L'Hexagonale** s'assouplit. On ne vise plus la pureté stricte des couches, mais des frontières fonctionnelles, avec un contrat explicite.
+>
+> **SOLID** se contextualise. Selon que le code est jetable ou qu'il se transmet, le curseur bouge.
+>
+> **[ralentir]**
+>
+> Aucun de ces principes ne disparaît. C'est leur version **dogmatique** qui tombe.
 
 ---
 
