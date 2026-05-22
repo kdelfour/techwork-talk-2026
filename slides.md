@@ -1546,7 +1546,7 @@ title: "Le sort des 4 complications"
 - SOLID → "se contextualise : le curseur bouge selon régénérable ou non."
 - chute : "Aucun principe ne disparaît. C'est leur version DOGMATIQUE qui tombe."
 **Connexion** — vers slide "Mon premier deuil de code" : on a réglé le sort des standards, place au vécu.
-**Repère temporel** — 30:00 → 30:45 (~45s — décale les repères suivants de +45s, voir note timing)
+**Repère temporel** — 30:00 → 30:45 (~45s)
 **Jeu** — rythme de tableau : pointer chaque ligne. Ralentir sur la chute "version dogmatique".
 -->
 
@@ -1595,7 +1595,7 @@ J'en parle à mon thérapeute.
 - pause 2s, regarder la salle, sourire intérieur
 - punchline DEADPAN — *"J'en parle à mon thérapeute."* — le pince-sans-rire est crucial. Si tu ris en le disant, ça tombe à l'eau.
 **Connexion** — vers slide "Nouveaux critères" : maintenant qu'on a vécu la chose, regardons la grille.
-**Repère temporel** — 30:00 → 30:30 (~30s — court mais essentiel)
+**Repère temporel** — 30:45 → 31:15 (~30s — court mais essentiel)
 **Jeu** — la slide REQUIERT un timing parfait. Lire chaque ligne avec l'intention différente : factuel → vulnérable → deadpan. La punchline DOIT être livrée le plus sérieux possible. C'est le silence d'1 seconde après "thérapeute" qui fait rire la salle, pas la phrase elle-même.
 -->
 
@@ -1630,7 +1630,7 @@ title: "Nouveaux critères de qualité"
 - "Quatre critères. Je vous les passe en revue."
 - (lire les 4 noms des pastilles à voix haute, brièvement)
 **Connexion** — vers la séquence des 4 critères qui suit.
-**Repère temporel** — 30:15 → 30:30 (~15s, transition rapide)
+**Repère temporel** — 31:15 → 31:30 (~15s, transition rapide)
 **Jeu** — annoncer, ne pas s'attarder. Les 4 slides suivantes font le détail.
 -->
 
@@ -1670,7 +1670,7 @@ title: "Critère 1/4 — Promptabilité"
 - "Si je dois écrire 3 pages de prompt pour qu'on régénère un module, c'est mort. Le code est trop complexe pour son intention."
 - "Un code promptable, c'est un code dont on peut écrire la spec en quelques lignes."
 **Connexion** — vers slide suivante (Convention forte).
-**Repère temporel** — 30:30 → 30:55 (~25s)
+**Repère temporel** — 31:30 → 31:55 (~25s)
 **Jeu** — poser le 1er critère, installer le format.
 -->
 
@@ -1710,7 +1710,7 @@ que l'IA peut anticiper ? »
 - "Plus le repo est cohérent, plus elle est précise. Plus on lui demande peu, plus elle livre juste."
 - "Un repo qui mélange 3 styles, c'est un repo où l'IA hésite."
 **Connexion** — vers slide suivante (Couverture exécutable).
-**Repère temporel** — 30:55 → 31:20 (~25s)
+**Repère temporel** — 31:55 → 32:20 (~25s)
 **Jeu** — même cadence que slide 1, le rythme s'installe.
 -->
 
@@ -1750,7 +1750,7 @@ sans dépendre de l'implémentation ? »
 - "Les tests qui vérifient le COMPORTEMENT — ce que la fonction fait, pas comment — deviennent un super-pouvoir. Ils sont la spec exécutable."
 - "Un bon test, aujourd'hui, c'est un test qu'une IA peut lire et générer le code correspondant."
 **Connexion** — vers slide suivante (Refactorabilité), la pointe finale.
-**Repère temporel** — 31:20 → 31:45 (~25s)
+**Repère temporel** — 32:20 → 32:45 (~25s)
 **Jeu** — c'est le critère qui désamorce la question "et les tests alors ?". Bien marquer la nuance.
 -->
 
@@ -1797,7 +1797,7 @@ si on le jette ? »
 - "La pureté des couches. La rigueur SOLID stricte. Le découplage parfait. Le découpage en 18 micro-services."
 - "Pas faux. Mais plus en tête."
 **Connexion** — vers slide REX : voilà ce que ça donne en pratique.
-**Repère temporel** — 31:45 → 32:15 (~30s — un peu plus, à cause du recadrage)
+**Repère temporel** — 32:45 → 33:15 (~30s — un peu plus, à cause du recadrage)
 **Jeu** — RALENTIR sur la phrase finale. Laisser le silence faire le boulot. La salle doit faire la liste mentale de ce qui dégringole.
 -->
 
@@ -1843,7 +1843,7 @@ title: "REX — On porte les deux"
 - "Et je code pareil. Selon le morceau, selon l'enjeu."
 - "Voici ce que j'ai abandonné, et ce que j'ai renforcé."
 **Connexion** — vers slide 25 : ce que j'ai abandonné.
-**Repère temporel** — 32:00 → 33:30 (90s)
+**Repère temporel** — 33:15 → 34:45 (90s)
 **Jeu** — ton plus chaleureux. C'est le moment "je vous parle de moi".
 -->
 
@@ -1910,7 +1910,7 @@ title: "Ce que j'ai abandonné"
 - "Les tests qui testent l'implem. Ils figent le code. La régénération devient impossible."
 - "Note : je ne dis pas 'plus jamais'. Je dis 'moins automatique'. C'est un choix conscient."
 **Connexion** — vers slide 26 : ce que j'ai renforcé.
-**Repère temporel** — 33:30 → 35:30 (2 min)
+**Repère temporel** — 34:45 → 36:45 (2 min)
 **Jeu** — assumer. Ne pas se justifier sans cesse. Ce sont des choix, ils sont défendus.
 -->
 
@@ -1985,7 +1985,7 @@ title: "Ce que j'ai renforcé"
 - "Le jugement humain sur l'INTENTION. L'IA dit 'comment'. Le senior dit 'pourquoi'."
 - "La revue. Plus que jamais. Mais pas pour repérer un mauvais nom de variable. Pour vérifier le SENS."
 **Connexion** — vers slide "L'IA, levier sur un projet dégradé".
-**Repère temporel** — 35:30 → 37:30 (2 min)
+**Repère temporel** — 36:45 → 38:45 (2 min)
 **Jeu** — énergie positive. C'est ce qu'on a GAGNÉ. Faire la bascule émotionnelle après le "abandonné".
 -->
 
@@ -2036,7 +2036,7 @@ title: "L'IA, levier sur un projet dégradé"
 - "Condition non négociable : l'expert. Et ce n'est pas un réglage one-shot — il faut continuer de régler, de garder la pratique saine."
 - chute : "L'IA ne remplace pas le dev senior. Elle le complète."
 **Connexion** — vers slide "La qualité a changé, pas baissé" : la conclusion.
-**Repère temporel** — 37:30 → 38:15 (~45s — cumul +1:30 sur les repères suivants avec la slide "verdict")
+**Repère temporel** — 38:45 → 39:30 (~45s)
 **Jeu** — ton d'ouverture, presque rassurant. C'est une main tendue à ceux qui partent d'un mauvais code.
 -->
 
@@ -2084,7 +2084,7 @@ title: "La qualité a changé, pas baissé"
 - "Patek, Vacheron, Audemars — leur prix a explosé. Pas parce qu'elles donnent l'heure mieux. Parce qu'elles ne vendent plus l'heure."
 - "Elles vendent autre chose. Et nous pouvons faire pareil."
 **Connexion** — vers slide 28 : la punchline finale.
-**Repère temporel** — 37:30 → 38:30 (60s, raccourci pour ménager le poll de retour)
+**Repère temporel** — 39:30 → 40:30 (60s, raccourci pour ménager le poll de retour)
 **Jeu** — le ton se calme. On approche de la conclusion. Lire la citation horlogère doucement.
 -->
 
@@ -2115,7 +2115,7 @@ title: "Punchline finale"
 - pause
 - "Et ça vaut peut-être la peine de le sacrifier."
 **Connexion** — vers slide 32 : retour au poll d'ouverture.
-**Repère temporel** — 38:30 → 39:30 (60s)
+**Repère temporel** — 40:30 → 41:30 (60s)
 **Jeu** — c'est LA fin de l'argument. On l'assume. Sourire en silence à la fin.
 -->
 
@@ -2157,7 +2157,7 @@ title: "Et vous, encore une fois ?"
 - *(commenter selon la salle, par ex. : "Quelques mains. Bien." ou "Beaucoup de mains. Le contrat est rempli." ou "Pas une main. C'est OK aussi — au moins on s'est posé la question.")*
 - Pas de jugement, pas de victoire revendiquée. C'est un miroir, pas un score.
 **Connexion** — vers slide 32 : Merci, Q&A.
-**Repère temporel** — 39:30 → 40:00 (30s)
+**Repère temporel** — 41:30 → 42:00 (30s)
 **Jeu** — sourire, calme. Ne PAS tenter de "convertir" si peu de mains. Juste constater honnêtement.
 -->
 
@@ -2221,6 +2221,6 @@ title: "Merci / Q&A"
 - "Et la question d'ouverture : vous, mécanique ou quartz ?"
 - pendant le Q&A, laisser cette slide affichée — les contacts restent visibles
 **Connexion** — fin du deck. Q&A jusqu'à 16:50.
-**Repère temporel** — 40:00 → 50:00 (Q&A 10 min)
+**Repère temporel** — 42:00 → 50:00 (Q&A ~8 min)
 **Jeu** — sourire. Saluer. Boire de l'eau. Attendre la première question avec patience.
 -->

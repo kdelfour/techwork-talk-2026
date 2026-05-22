@@ -17,10 +17,10 @@ Ouvre http://localhost:3030.
 
 ### Avec timer (mode présentation)
 
-Pour activer le tracking de rythme (cible : 40 min de talk) :
+Pour activer le tracking de rythme (cible : ~42 min de talk) :
 
 ```
-http://localhost:3030/?time=40
+http://localhost:3030/?time=42
 ```
 
 Une barre haut-droite affiche le temps écoulé, la progression slides vs temps, et un état "en avance / en retard / dans le rythme".

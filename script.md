@@ -438,7 +438,7 @@
 
 ---
 
-# ACTE III — RECONSTRUCTION (27:00 → 40:00)
+# ACTE III — RECONSTRUCTION (27:00 → 42:00)
 
 ## Slide 22 — Séparateur ACTE III · 27:00 → 27:30
 
@@ -490,7 +490,7 @@
 
 ---
 
-## Slide 24b — Le sort des 4 complications · 30:00 → 30:45
+## Slide 24b — Le sort des 4 complications · 30:30 → 31:15
 
 > Avant d'aller plus loin, un retour en arrière. Souvenez-vous, dans l'Acte deux, des quatre béquilles : DRY, Design Patterns, Architecture Hexagonale, SOLID. La régénération, est-ce qu'elle les jette à la poubelle ?
 >
@@ -512,7 +512,7 @@
 
 ---
 
-## Slide 25 — Nouveaux critères de qualité · 30:30 → 32:00
+## Slide 25 — Nouveaux critères de qualité · 31:15 → 33:15
 
 > Si on optimise pour la régénération, voici ce qui devient critique.
 >
@@ -532,7 +532,7 @@
 
 ---
 
-## Slide 26 — REX intro · 32:00 → 33:30
+## Slide 26 — REX intro · 33:15 → 34:45
 
 > Maintenant, le concret. Ce que j'ai changé chez moi, dans mes équipes, dans mes choix.
 >
@@ -550,7 +550,7 @@
 
 ---
 
-## Slide 27 — Ce que j'ai abandonné · 33:30 → 35:30
+## Slide 27 — Ce que j'ai abandonné · 34:45 → 36:45
 
 > Sans regrets. Ou presque.
 >
@@ -568,7 +568,7 @@
 
 ---
 
-## Slide 28 — Ce que j'ai renforcé · 35:30 → 37:30
+## Slide 28 — Ce que j'ai renforcé · 36:45 → 38:45
 
 > Et de l'autre côté, ce sur quoi j'ai doublé la mise. Avec conviction.
 >
@@ -584,7 +584,7 @@
 
 ---
 
-## Slide 28b — L'IA, levier sur un projet dégradé · 37:30 → 38:15
+## Slide 28b — L'IA, levier sur un projet dégradé · 38:45 → 39:30
 
 > Une objection qu'on me pose souvent : « Tout ça, c'est bien si ton repo est sain. Mais mon projet à moi, c'est déjà un champ de ruines. L'IA va juste empirer le bordel. »
 >
@@ -602,7 +602,7 @@
 
 ---
 
-## Slide 29 — La qualité a changé · 37:30 → 38:30
+## Slide 29 — La qualité a changé · 39:30 → 40:30
 
 > Donc, on revient à la question de départ.
 >
@@ -628,7 +628,7 @@
 
 ---
 
-## Slide 30 — PUNCHLINE FINALE · 38:30 → 39:30
+## Slide 30 — PUNCHLINE FINALE · 40:30 → 41:30
 
 *(la slide apparaît)* **[silence]**
 
@@ -650,7 +650,7 @@
 
 ---
 
-## Slide 31 — Et vous, encore une fois ? · 39:30 → 40:00
+## Slide 31 — Et vous, encore une fois ? · 41:30 → 42:00
 
 > **[posé, regarder la salle]**
 >
@@ -668,7 +668,7 @@
 
 ---
 
-## Slide 32 — Q&A / Merci · 40:00 → 50:00
+## Slide 32 — Q&A / Merci · 42:00 → 50:00
 
 *(applaudissements ; laisser la slide affichée pendant tout le Q&A)*
 
@@ -690,8 +690,8 @@
 | 12:00 | 11 | Sauter la moitié de la slide 8 | Ralentir slide 8 sur "identité" |
 | 20:00 | 17 | Compresser slide 14 (question gênante) | Pause avant punchline ego allongée |
 | 27:00 | 22 | Sauter une partie de slide 18 | Allonger slide 17 avec un standard de plus |
-| 33:30 | 26 | Aller direct slide 25 | Ajouter une anecdote perso |
-| 40:00 | 32 | Couper la mention Patek slide 27 | Une slide-bonus disponible si projet |
+| 34:45 | 26 | Aller direct slide 25 | Ajouter une anecdote perso |
+| 42:00 | 32 | Couper la mention Patek slide 27 | Une slide-bonus disponible si projet |
 
 ---
 
