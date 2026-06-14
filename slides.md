@@ -37,7 +37,7 @@ clicks: 5
 <div v-if="$clicks >= 2" class="self-start max-w-[85%] flex gap-3">
   <div class="w-7 h-7 shrink-0 rounded-full bg-[#10a37f] flex items-center justify-center text-white text-sm leading-none mt-1">✦</div>
   <div class="bg-[#1a1a1a] border border-white/10 rounded-2xl rounded-bl-md px-5 py-3 text-gray-300 italic">
-    <Typewriter text="Bien sûr ! Voici votre texte : « Mes très chers frères et sœurs, nous voici réunis aujourd'hui pour célébrer le sacrement du code propre… »" :speed="16" />
+    <Typewriter text="Bien sûr ! Voici votre texte : « Mes très chers frères et sœurs, nous voici réunis aujourd'hui pour célébrer le sacrement du code propre… »" :speed="16" :thinking="900" />
   </div>
 </div>
 
@@ -48,7 +48,7 @@ clicks: 5
 <div v-if="$clicks >= 4" class="self-start max-w-[85%] flex gap-3">
   <div class="w-7 h-7 shrink-0 rounded-full bg-[#10a37f] flex items-center justify-center text-white text-sm leading-none mt-1">✦</div>
   <div class="bg-[#1a1a1a] border border-white/10 rounded-2xl rounded-bl-md px-5 py-3 text-gray-300 italic">
-    <Typewriter text="Compris, version militante : « Compagnons ! L'heure est grave. Le capital algorithmique nous vole notre savoir-faire — debout, les forçats du refacto ! »" :speed="16" />
+    <Typewriter text="Compris, version militante : « Compagnons ! L'heure est grave. Le capital algorithmique nous vole notre savoir-faire — debout, les forçats du refacto ! »" :speed="16" :thinking="900" />
   </div>
 </div>
 
