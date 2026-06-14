@@ -30,48 +30,36 @@ clicks: 5
 
 <div class="flex-1 flex flex-col gap-3 text-left text-[0.95rem] leading-relaxed justify-start overflow-hidden">
 
-<v-click>
-<div class="self-end max-w-[78%] bg-[#2f2f2f] rounded-2xl rounded-br-md px-5 py-3 text-gray-100">
-  je suis à la ramasse complet, génère-moi une prez sur la qualité et l'IA, un truc qui claque stp, merci, bisous 😘
+<div v-if="$clicks >= 1" class="self-end max-w-[78%] bg-[#2f2f2f] rounded-2xl rounded-br-md px-5 py-3 text-gray-100">
+  <Typewriter text="je suis à la ramasse complet, génère-moi une prez sur la qualité et l'IA, un truc qui claque stp, merci, bisous 😘" :speed="42" jitter />
 </div>
-</v-click>
 
-<v-click>
-<div class="self-start max-w-[85%] flex gap-3">
+<div v-if="$clicks >= 2" class="self-start max-w-[85%] flex gap-3">
   <div class="w-7 h-7 shrink-0 rounded-full bg-[#10a37f] flex items-center justify-center text-white text-sm leading-none mt-1">✦</div>
-  <div class="bg-[#1a1a1a] border border-white/10 rounded-2xl rounded-bl-md px-5 py-3 text-gray-200">
-    Bien sûr&nbsp;! Voici votre texte&nbsp;:<br/>
-    <span class="italic text-gray-400">« Mes très chers frères et sœurs, nous voici réunis aujourd'hui pour célébrer le sacrement du code propre… »</span>
+  <div class="bg-[#1a1a1a] border border-white/10 rounded-2xl rounded-bl-md px-5 py-3 text-gray-300 italic">
+    <Typewriter text="Bien sûr ! Voici votre texte : « Mes très chers frères et sœurs, nous voici réunis aujourd'hui pour célébrer le sacrement du code propre… »" :speed="16" />
   </div>
 </div>
-</v-click>
 
-<v-click>
-<div class="self-end max-w-[78%] bg-[#2f2f2f] rounded-2xl rounded-br-md px-5 py-3 text-gray-100">
-  euh… c'est pas le bon auditoire 😅 quelque chose de plus engagé.
+<div v-if="$clicks >= 3" class="self-end max-w-[78%] bg-[#2f2f2f] rounded-2xl rounded-br-md px-5 py-3 text-gray-100">
+  <Typewriter text="euh… c'est pas le bon auditoire 😅 quelque chose de plus engagé." :speed="42" jitter />
 </div>
-</v-click>
 
-<v-click>
-<div class="self-start max-w-[85%] flex gap-3">
+<div v-if="$clicks >= 4" class="self-start max-w-[85%] flex gap-3">
   <div class="w-7 h-7 shrink-0 rounded-full bg-[#10a37f] flex items-center justify-center text-white text-sm leading-none mt-1">✦</div>
-  <div class="bg-[#1a1a1a] border border-white/10 rounded-2xl rounded-bl-md px-5 py-3 text-gray-200">
-    Compris, version militante&nbsp;:<br/>
-    <span class="italic text-gray-400">« Compagnons&nbsp;! L'heure est grave. Le capital algorithmique nous vole notre savoir-faire — debout, les forçats du refacto&nbsp;! »</span>
+  <div class="bg-[#1a1a1a] border border-white/10 rounded-2xl rounded-bl-md px-5 py-3 text-gray-300 italic">
+    <Typewriter text="Compris, version militante : « Compagnons ! L'heure est grave. Le capital algorithmique nous vole notre savoir-faire — debout, les forçats du refacto ! »" :speed="16" />
   </div>
 </div>
-</v-click>
 
 </div>
 
-<v-click>
-<div class="shrink-0 mt-5 text-center">
+<div v-if="$clicks >= 5" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0 }" class="shrink-0 mt-5 text-center">
   <div class="text-2xl md:text-3xl font-orbitron font-black leading-tight">
     L'IA, ça peut aider.<br/>
     Mais visiblement… <GlowText color="#ff8c00">pas pour tout.</GlowText>
   </div>
 </div>
-</v-click>
 
 </div>
 

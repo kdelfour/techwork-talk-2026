@@ -188,3 +188,18 @@ nav.flex.flex-col > div.bg-main {
 .chatgpt-slide .slidev-layout > div:not(.fixed):not([style*="position: fixed"]) {
   justify-content: flex-start;
 }
+
+/* Curseur clignotant de la machine à écrire */
+.tw-caret {
+  display: inline-block;
+  margin-left: 1px;
+  color: #10a37f;
+  font-weight: 400;
+  transform: translateY(1px);
+  animation: tw-blink 1s steps(1) infinite;
+}
+
+@keyframes tw-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
