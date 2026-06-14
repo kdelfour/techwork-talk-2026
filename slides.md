@@ -13,6 +13,70 @@ fonts:
   sans: 'Space Grotesk'
   mono: 'JetBrains Mono'
 ---
+title: "Le prompt magique"
+class: chatgpt-slide
+clicks: 5
+---
+
+<TronGrid color="#10a37f" :opacity="0.06" />
+
+<div class="relative z-10 flex flex-col h-full w-full max-w-3xl mx-auto py-4">
+
+<div class="flex items-center gap-2 mb-5 shrink-0">
+  <div class="w-8 h-8 rounded-full bg-[#10a37f] flex items-center justify-center text-white text-lg leading-none">✦</div>
+  <span class="font-bold text-gray-100 text-lg">ChatGPT</span>
+  <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-gray-400">turbo-deluxe-9000</span>
+</div>
+
+<div class="flex-1 flex flex-col gap-3 text-left text-[0.95rem] leading-relaxed justify-start overflow-hidden">
+
+<div v-if="$clicks >= 1" class="self-end max-w-[78%] bg-[#2f2f2f] rounded-2xl rounded-br-md px-5 py-3 text-gray-100">
+  <Typewriter text="je suis à la ramasse complet, génère-moi une prez sur la qualité et l'IA, un truc qui claque stp, merci, bisous 😘" :speed="42" jitter />
+</div>
+
+<div v-if="$clicks >= 2" class="self-start max-w-[85%] flex gap-3">
+  <div class="w-7 h-7 shrink-0 rounded-full bg-[#10a37f] flex items-center justify-center text-white text-sm leading-none mt-1">✦</div>
+  <div class="bg-[#1a1a1a] border border-white/10 rounded-2xl rounded-bl-md px-5 py-3 text-gray-300 italic">
+    <Typewriter text="Bien sûr ! Voici votre texte : « Mes très chers frères et sœurs, nous voici réunis aujourd'hui pour célébrer le sacrement du code propre… »" :speed="16" :thinking="900" />
+  </div>
+</div>
+
+<div v-if="$clicks >= 3" class="self-end max-w-[78%] bg-[#2f2f2f] rounded-2xl rounded-br-md px-5 py-3 text-gray-100">
+  <Typewriter text="euh… c'est pas le bon auditoire 😅 quelque chose de plus engagé." :speed="42" jitter />
+</div>
+
+<div v-if="$clicks >= 4" class="self-start max-w-[85%] flex gap-3">
+  <div class="w-7 h-7 shrink-0 rounded-full bg-[#10a37f] flex items-center justify-center text-white text-sm leading-none mt-1">✦</div>
+  <div class="bg-[#1a1a1a] border border-white/10 rounded-2xl rounded-bl-md px-5 py-3 text-gray-300 italic">
+    <Typewriter text="Compris, version militante : « Compagnons ! L'heure est grave. Le capital algorithmique nous vole notre savoir-faire — debout, les forçats du refacto ! »" :speed="16" :thinking="900" />
+  </div>
+</div>
+
+</div>
+
+<div v-if="$clicks >= 5" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0 }" class="shrink-0 mt-5 text-center">
+  <div class="text-2xl md:text-3xl font-orbitron font-black leading-tight">
+    L'IA, ça peut aider.<br/>
+    Mais visiblement… <GlowText color="#ff8c00">pas pour tout.</GlowText>
+  </div>
+</div>
+
+</div>
+
+<!--
+**Intention** — démarrer par un éclat de rire, désamorcer, et poser en creux la thèse : l'IA est un outil formidable… mal utilisé, elle produit du hors-sujet qui "claque" mais ne sert à rien. Parfaite rampe de lancement vers le sujet qualité.
+**Déroulé (clics)** —
+1. lire le prompt à voix haute, ton fatigué/relâché — la salle se reconnaît
+2. première réponse "sermon" : prendre une voix d'homélie, marquer le silence
+3. "c'est pas le bon auditoire" — jouer l'agacement complice
+4. deuxième réponse "militante" : monter d'un cran, poing levé pour le fun
+5. punchline : redescendre, sourire — "l'IA peut aider, mais pas là" → bascule vers le vrai sujet
+**Connexion** — "Bon. Blague à part, c'est exactement de ça qu'on va parler." → slide titre
+**Repère temporel** — 0:00 → 0:45
+**Jeu** — ne pas se presser entre les clics, laisser les rires retomber avant d'enchaîner.
+-->
+
+---
 
 <TronGrid color="#00d9ff" :opacity="0.14" />
 
