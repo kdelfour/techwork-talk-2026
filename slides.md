@@ -4,7 +4,8 @@ title: Devons-nous sacrifier la qualité avec l'IA ?
 info: |
   Tech'Work Lyon 2026 — Track Craft
   Talk de Kevin Delfour, CTO — 18 juin 2026
-class: text-center
+class: chatgpt-slide
+clicks: 5
 drawings:
   persist: false
 transition: slide-left
@@ -12,10 +13,6 @@ mdc: true
 fonts:
   sans: 'Space Grotesk'
   mono: 'JetBrains Mono'
----
-title: "Le prompt magique"
-class: chatgpt-slide
-clicks: 5
 ---
 
 <TronGrid color="#10a37f" :opacity="0.06" />
@@ -76,6 +73,8 @@ clicks: 5
 **Jeu** — ne pas se presser entre les clics, laisser les rires retomber avant d'enchaîner.
 -->
 
+---
+class: text-center
 ---
 
 <TronGrid color="#00d9ff" :opacity="0.14" />
