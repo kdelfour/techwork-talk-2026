@@ -49,16 +49,16 @@ Développeurs expérimentés, lead dev, architectes, CTO. Public Craft, donc sen
 
 ---
 
-## 3. Architecture narrative — Approche "Construction / Déconstruction / Reconstruction"
+## 3. Architecture narrative — Approche "L'héritage / La crise / Le renouveau"
 
 Arc dramaturgique en 3 actes. Le mix provoc/REX se distribue mécaniquement :
 - **Acte I** prépare le terrain (héritage craft, identité)
-- **Acte II** = moment provocateur (ego, déconstruction des standards)
+- **Acte II** = moment provocateur (ego, remise en question des standards)
 - **Acte III** = REX nuancé + résolution
 
 **Cible : 29 slides pour 40 min** (≈1.4 min/slide).
 
-### ACTE I — CONSTRUCTION (12 min, slides 1–8)
+### ACTE I — L'HÉRITAGE (12 min, slides 1–8)
 
 > *La haute horlogerie comme métaphore du craft logiciel.*
 
@@ -67,19 +67,19 @@ Arc dramaturgique en 3 actes. Le mix provoc/REX se distribue mécaniquement :
 | 1 | Cover : titre + sous-titre + Tech'Work 2026 | Accroche TRON |
 | 2 | Qui parle ? Kevin Delfour, CTO | Crédibilité |
 | 3 | Hook public : "Code IA → enthousiaste ou allergique ?" | Engager la salle |
-| 4 | Séparateur ACTE I — CONSTRUCTION | Repère narratif |
+| 4 | Séparateur ACTE I — L'HÉRITAGE | Repère narratif |
 | 5 | Notre histoire commune : Beck, Fowler, Evans, Martin / Patek, Vacheron, Audemars, Lange | Le craft a des pères |
 | 6 | Ce qu'on a appris : SOLID, DRY, Clean Archi, DDD, TDD = nos complications horlogères | Inventaire |
 | 7 | La promesse implicite : un beau code se transmet, se révise, se respecte | Pourquoi on y croit |
 | 8 | Notre identité de craftsman : "Nous sommes des horlogers du logiciel" | Pivot vers Acte II |
 
-### ACTE II — DÉCONSTRUCTION (15 min, slides 9–19)
+### ACTE II — LA CRISE (15 min, slides 9–19)
 
 > *La crise du quartz comme miroir de l'arrivée de l'IA.*
 
 | # | Slide | Rôle |
 |---|---|---|
-| 9 | Séparateur ACTE II — DÉCONSTRUCTION | Repère narratif |
+| 9 | Séparateur ACTE II — LA CRISE | Repère narratif |
 | 10 | L'IA débarque : Décembre 1969 / Novembre 2022 | Mise en parallèle |
 | 11 | Le choc : premier regard sur du code IA | Phénoménologie |
 | 12 | Nos réactions classiques : "pas clean, pas SOLID, pas DDD" | Miroir |
@@ -91,13 +91,13 @@ Arc dramaturgique en 3 actes. Le mix provoc/REX se distribue mécaniquement :
 | 18 | Détail : DRY, Patterns, Hexagonale, Tests = limites humaines compensées | Démonstration |
 | 19 | **PUNCHLINE ACTE II** : "Nos standards sont des complications cognitives." | Moment fort 2 |
 
-### ACTE III — RECONSTRUCTION (13 min, slides 20–29)
+### ACTE III — LE RENOUVEAU (13 min, slides 20–29)
 
 > *Aujourd'hui, on porte les deux. Pas pour les mêmes raisons.*
 
 | # | Slide | Rôle |
 |---|---|---|
-| 20 | Séparateur ACTE III — RECONSTRUCTION | Repère narratif |
+| 20 | Séparateur ACTE III — LE RENOUVEAU | Repère narratif |
 | 21 | L'IA n'a pas nos limites (pas de fatigue, pas de mémoire limitée) | Bascule paradigme |
 | 22 | Maintenance → Régénération | Concept clé |
 | 23 | Nouveaux critères de qualité : promptabilité, convention forte, refactorabilité par régénération | Visuel |
@@ -142,9 +142,9 @@ Arc dramaturgique en 3 actes. Le mix provoc/REX se distribue mécaniquement :
 | Rôle | Couleur | Hex | Usage |
 |---|---|---|---|
 | Fond principal | Noir profond | `#000000` | Toutes les slides |
-| **Cyan TRON** (Acte I) | Cyan néon | `#00d9ff` | Construction, titres principaux, glow dominant |
-| **Orange TRON** (Acte II) | Orange ambré | `#ff8c00` | Déconstruction, provocations, alertes |
-| **Magenta** (Acte III) | Magenta néon | `#ff2e9a` | Reconstruction, punchline finale |
+| **Cyan TRON** (Acte I) | Cyan néon | `#00d9ff` | L'héritage, titres principaux, glow dominant |
+| **Orange TRON** (Acte II) | Orange ambré | `#ff8c00` | La crise, provocations, alertes |
+| **Magenta** (Acte III) | Magenta néon | `#ff2e9a` | Le renouveau, punchline finale |
 | Violet (transition) | Violet électrique | `#a855f7` | Slides charnières, secondaires |
 | Vert grid (subtil) | Cyan désaturé | `#0e3a4a` | Lignes de grille TRON en fond |
 | Texte principal | Blanc cassé | `#e5e7eb` | Lecture |
@@ -166,9 +166,9 @@ Arc dramaturgique en 3 actes. Le mix provoc/REX se distribue mécaniquement :
 
 ### Mapping couleur par acte
 
-- **Acte I — Construction** : dominante cyan
-- **Acte II — Déconstruction** : dominante orange
-- **Acte III — Reconstruction** : dominante magenta
+- **Acte I — L'héritage** : dominante cyan
+- **Acte II — La crise** : dominante orange
+- **Acte III — Le renouveau** : dominante magenta
 - **Punchlines fortes** : flash magenta + glow exagéré (slides 15, 19, 28)
 - **Séparateurs d'actes** : full screen, couleur de l'acte, grille TRON pleine intensité
 
@@ -223,9 +223,9 @@ Remplacer les phases atelier par les 3 actes :
 ```js
 const phases = [
   { label: 'Intro',           start: 1,  end: 3,  color: '#9ca3af' },
-  { label: 'Construction',    start: 4,  end: 8,  color: '#00d9ff' },
-  { label: 'Déconstruction',  start: 9,  end: 19, color: '#ff8c00' },
-  { label: 'Reconstruction',  start: 20, end: 27, color: '#ff2e9a' },
+  { label: 'L\'héritage',     start: 4,  end: 8,  color: '#00d9ff' },
+  { label: 'La crise',        start: 9,  end: 19, color: '#ff8c00' },
+  { label: 'Le renouveau',    start: 20, end: 27, color: '#ff2e9a' },
   { label: 'Final',           start: 28, end: 29, color: '#a855f7' },
 ]
 ```
@@ -294,7 +294,7 @@ Chaque slide contient un bloc `<!-- ... -->` avec :
 
 ---
 
-## ACTE I — CONSTRUCTION (0:00 → 12:00)
+## ACTE I — L'HÉRITAGE (0:00 → 12:00)
 
 ### Slide 1 — Cover (0:00 → 0:30)
 *[lumière basse, on prend la salle]*

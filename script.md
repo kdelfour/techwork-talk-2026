@@ -20,7 +20,7 @@
 
 ---
 
-# ACTE I — CONSTRUCTION (0:00 → 12:00)
+# ACTE I — L'HÉRITAGE (0:00 → 12:00)
 
 ## Slide 1 — Cover · 0:00 → 0:30
 
@@ -100,7 +100,7 @@
 
 *(la slide se déploie)* **[silence]**
 
-> Acte un. Construction.
+> Acte un. L'héritage.
 >
 > Avant d'attaquer ce que l'IA fait au code, on doit d'abord se rappeler ce qu'on a construit. Ce qu'on défend. Ce qu'on aime.
 >
@@ -212,7 +212,7 @@
 
 ---
 
-# ACTE II — DÉCONSTRUCTION (12:00 → 27:00)
+# ACTE II — LA CRISE (12:00 → 27:00)
 
 ## Slide 11 — Séparateur ACTE II · 12:00 → 12:30
 
@@ -438,13 +438,13 @@
 
 ---
 
-# ACTE III — RECONSTRUCTION (27:00 → 42:00)
+# ACTE III — LE RENOUVEAU (27:00 → 42:00)
 
 ## Slide 22 — Séparateur ACTE III · 27:00 → 27:30
 
 *(la slide se déploie)* **[silence]**
 
-> Acte trois. La reconstruction.
+> Acte trois. Le renouveau.
 >
 > Maintenant, on parle concret. Ce que j'ai changé. Comment je code aujourd'hui. Et ce que ça donne, quand on assume.
 

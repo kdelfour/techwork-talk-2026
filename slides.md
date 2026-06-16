@@ -270,12 +270,12 @@ title: "Et au poignet ?"
 -->
 
 ---
-title: "Acte I — Construction"
+title: "Acte I — L'héritage"
 ---
 
 <ActSeparator
   act="I"
-  title="CONSTRUCTION"
+  title="L'HÉRITAGE"
   subtitle="La haute horlogerie comme métaphore du craft logiciel"
   color="#00d9ff"
 />
@@ -493,7 +493,7 @@ title: "Apprendre tout ça"
 </div>
 
 <!--
-**Intention** — révéler une seconde dimension à côté des limites cognitives : l'effort d'apprentissage qui crée un attachement émotionnel. Préparer la déconstruction "ego" de l'Acte II tout en restant en mode positif (Acte I).
+**Intention** — révéler une seconde dimension à côté des limites cognitives : l'effort d'apprentissage qui crée un attachement émotionnel. Préparer la remise en question "ego" de l'Acte II tout en restant en mode positif (Acte I).
 **Points clés** —
 - "Tous ces patterns, ces principes, ces architectures — on ne les a pas appris en deux week-ends."
 - "Lectures denses. Conférences. Centaines d'heures de pratique. Refactos cuisants. Débats avec des collègues. Des années."
@@ -590,12 +590,12 @@ title: "Notre identité de craftsman"
 -->
 
 ---
-title: "Acte II — Déconstruction"
+title: "Acte II — La crise"
 ---
 
 <ActSeparator
   act="II"
-  title="DÉCONSTRUCTION"
+  title="LA CRISE"
   subtitle="La crise du quartz comme miroir de l'arrivée de l'IA"
   color="#ff8c00"
 />
@@ -1408,12 +1408,12 @@ title: "Punchline — Complications cognitives"
 -->
 
 ---
-title: "Acte III — Reconstruction"
+title: "Acte III — Le renouveau"
 ---
 
 <ActSeparator
   act="III"
-  title="RECONSTRUCTION"
+  title="LE RENOUVEAU"
   subtitle="Aujourd'hui, on porte les deux. Pas pour les mêmes raisons."
   color="#ff2e9a"
 />
@@ -1421,7 +1421,7 @@ title: "Acte III — Reconstruction"
 <!--
 **Intention** — bascule vers le REX, le concret, la résolution.
 **Points clés** —
-- "Acte trois. La reconstruction."
+- "Acte trois. Le renouveau."
 - "Maintenant, on parle concret. Ce que j'ai changé. Comment je code aujourd'hui."
 - "Et ce que ça donne quand on assume."
 **Connexion** — vers slide 21 : le constat qui tout débloque.
@@ -1649,7 +1649,7 @@ J'en parle à mon thérapeute.
 </div>
 
 <!--
-**Intention** — RESPIRATION. Acte III était jusqu'ici très conceptuel (maintenance → régénération). La salle a besoin d'une histoire vraie pour ancrer ça. Et d'un rire — surtout après la déconstruction de l'Acte II.
+**Intention** — RESPIRATION. Acte III était jusqu'ici très conceptuel (maintenance → régénération). La salle a besoin d'une histoire vraie pour ancrer ça. Et d'un rire — surtout après la crise de l'Acte II.
 **Points clés** —
 - "Je vais vous raconter une vraie anecdote."
 - "Premier paragraphe :" lire posé, factuel — *"La première fois que j'ai jeté 400 lignes pour les régénérer en 2 minutes, j'ai fait un mini-deuil."*

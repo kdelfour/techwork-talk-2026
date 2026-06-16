@@ -44,9 +44,9 @@ const statusText = computed(() => {
 // ── Phases du talk : 3 actes + intro/final ──
 const phases = [
   { label: 'Intro',          start: 1,  end: 4,  color: '#9ca3af' },
-  { label: 'Construction',   start: 5,  end: 10, color: '#00d9ff' },
-  { label: 'Déconstruction', start: 11, end: 21, color: '#ff8c00' },
-  { label: 'Reconstruction', start: 22, end: 29, color: '#ff2e9a' },
+  { label: 'L\'héritage',    start: 5,  end: 10, color: '#00d9ff' },
+  { label: 'La crise',       start: 11, end: 21, color: '#ff8c00' },
+  { label: 'Le renouveau',   start: 22, end: 29, color: '#ff2e9a' },
   { label: 'Final',          start: 30, end: 32, color: '#a855f7' },
 ]
 
