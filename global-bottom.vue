@@ -43,17 +43,21 @@ const statusText = computed(() => {
 
 // ── Phases du talk : 3 actes + intro/final ──
 const phases = [
-  { label: 'Intro',          start: 1,  end: 4,  color: '#9ca3af' },
-  { label: 'L\'héritage',    start: 5,  end: 10, color: '#00d9ff' },
-  { label: 'La crise',       start: 11, end: 21, color: '#ff8c00' },
-  { label: 'Le renouveau',   start: 22, end: 29, color: '#ff2e9a' },
-  { label: 'Final',          start: 30, end: 32, color: '#a855f7' },
+  { label: 'Intro',          start: 1,  end: 5,  color: '#9ca3af' },
+  { label: 'L\'héritage',    start: 6,  end: 11, color: '#00d9ff' },
+  { label: 'La crise',       start: 12, end: 28, color: '#ff8c00' },
+  { label: 'Le renouveau',   start: 29, end: 43, color: '#ff2e9a' },
+  { label: 'Final',          start: 44, end: 46, color: '#a855f7' },
 ]
 
+// Dernière phase dont le start est atteint : robuste aux ajouts de slides
 const currentPhaseIndex = computed(() => {
   const s = currentSlideNo.value
-  const idx = phases.findIndex(p => s >= p.start && s <= p.end)
-  return idx >= 0 ? idx : 0
+  let idx = 0
+  for (let i = 0; i < phases.length; i++) {
+    if (s >= phases[i].start) idx = i
+  }
+  return idx
 })
 
 const currentPhaseColor = computed(() => phases[currentPhaseIndex.value]?.color ?? '#9ca3af')
