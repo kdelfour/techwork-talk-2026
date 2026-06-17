@@ -2230,59 +2230,80 @@ title: "Merci / Q&A"
 
 <TronGrid color="#a855f7" :opacity="0.10" />
 
-<div class="relative z-10 flex flex-col items-center justify-center h-full text-center">
+<div class="relative z-10 flex flex-col items-center justify-between h-full text-center py-8">
 
-<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-violet mb-8 font-orbitron">
-  Merci. Vos questions ?
-</div>
-
-<h1 class="text-6xl font-orbitron font-black mb-10">
-  <GlowText color="#a855f7" font="orbitron">Merci</GlowText>
-</h1>
-
-<div class="text-xl text-gray-400 mb-12 max-w-2xl">
-  Et vous, vous portez plutôt mécanique ou quartz ?<br/>
-  Parlons-en.
-</div>
-
-<div class="grid grid-cols-3 gap-6 text-base text-gray-300">
-
-<div class="flex flex-col items-center gap-2">
-  <div class="w-12 h-12 rounded-xl bg-tron-violet/20 flex items-center justify-center">
-    <div class="i-tabler-mail text-2xl text-tron-violet" />
+<!-- Haut : remerciement -->
+<div class="flex flex-col items-center">
+  <div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-violet mb-4 font-orbitron">
+    Merci. Vos questions ?
   </div>
-  <div>kevin@delfour.co</div>
-</div>
-
-<div class="flex flex-col items-center gap-2">
-  <div class="w-12 h-12 rounded-xl bg-tron-cyan/20 flex items-center justify-center">
-    <div class="i-tabler-brand-github text-2xl text-tron-cyan" />
+  <h1 class="text-6xl font-orbitron font-black mb-4">
+    <GlowText color="#a855f7" font="orbitron">Merci</GlowText>
+  </h1>
+  <div class="text-lg text-gray-400 max-w-2xl">
+    Et vous, vous portez plutôt mécanique ou quartz ? Parlons-en.
   </div>
-  <div>github.com/kdelfour</div>
 </div>
 
-<div class="flex flex-col items-center gap-2">
-  <div class="w-12 h-12 rounded-xl bg-tron-magenta/20 flex items-center justify-center">
-    <div class="i-tabler-brand-linkedin text-2xl text-tron-magenta" />
+<!-- Bas : QR + réseaux, mis en avant -->
+<div class="flex flex-col items-center gap-6">
+
+<div class="flex items-center justify-center gap-12">
+
+<!-- QR code OpenFeedback -->
+<div class="flex flex-col items-center gap-3">
+  <div class="text-sm font-bold tracking-[0.35em] uppercase text-tron-violet font-orbitron">
+    Votre avis compte
   </div>
-  <div>linkedin.com/in/kevindelfour</div>
+  <div class="bg-white p-3 rounded-2xl shadow-[0_0_50px_rgba(168,85,247,0.75)] ring-2 ring-tron-violet/40">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" shape-rendering="crispEdges" class="w-40 h-40 block"><path fill="#ffffff" d="M0 0h39v39H0z"></path><path stroke="#000000" d="M1 1.5h7m6 0h2m2 0h2m1 0h2m1 0h2m2 0h2m1 0h7M1 2.5h1m5 0h1m2 0h1m1 0h2m2 0h1m2 0h2m3 0h2m1 0h1m1 0h1m1 0h1m5 0h1M1 3.5h1m1 0h3m1 0h1m1 0h2m1 0h1m2 0h3m1 0h4m1 0h1m3 0h2m1 0h1m1 0h3m1 0h1M1 4.5h1m1 0h3m1 0h1m1 0h4m3 0h2m2 0h4m1 0h3m3 0h1m1 0h3m1 0h1M1 5.5h1m1 0h3m1 0h1m1 0h3m1 0h3m1 0h2m2 0h1m1 0h1m5 0h1m1 0h1m1 0h3m1 0h1M1 6.5h1m5 0h1m1 0h1m1 0h1m3 0h1m1 0h1m5 0h1m2 0h4m1 0h1m5 0h1M1 7.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M9 8.5h2m1 0h1m2 0h1m2 0h1m1 0h1m3 0h1m3 0h2M1 9.5h1m1 0h5m7 0h1m6 0h1m1 0h2m1 0h2m2 0h5M1 10.5h5m2 0h1m2 0h1m4 0h4m2 0h1m2 0h1m4 0h1m1 0h1m1 0h1m1 0h1M1 11.5h2m4 0h1m2 0h1m2 0h1m5 0h1m1 0h1m3 0h2m2 0h2m1 0h3m1 0h2M3 12.5h3m3 0h2m2 0h1m3 0h1m3 0h2m1 0h1m3 0h3m6 0h1M3 13.5h3m1 0h1m1 0h1m1 0h2m1 0h2m2 0h1m1 0h1m4 0h3m2 0h2m1 0h5M3 14.5h3m3 0h2m2 0h1m2 0h2m1 0h8m2 0h2m1 0h1M3 15.5h2m2 0h1m2 0h1m4 0h4m4 0h1m2 0h4m1 0h4m2 0h1M1 16.5h2m1 0h1m1 0h1m2 0h6m4 0h1m1 0h2m1 0h1m2 0h4m1 0h2m2 0h1M1 17.5h2m1 0h1m2 0h1m1 0h2m1 0h1m3 0h2m1 0h1m2 0h1m1 0h2m1 0h2m1 0h2m3 0h1M1 18.5h1m1 0h1m1 0h1m6 0h2m2 0h1m2 0h2m4 0h1m3 0h1m6 0h1M1 19.5h1m1 0h5m1 0h3m1 0h1m1 0h3m3 0h2m2 0h1m2 0h1m2 0h1m3 0h3M1 20.5h1m3 0h1m2 0h5m2 0h2m3 0h3m1 0h1m2 0h3m1 0h5m1 0h1M2 21.5h4m1 0h2m2 0h2m3 0h1m5 0h2m1 0h3m2 0h2m1 0h1M3 22.5h1m4 0h1m1 0h1m2 0h3m1 0h3m1 0h2m1 0h1m4 0h1m4 0h1M1 23.5h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h2m1 0h1m2 0h1m1 0h1m2 0h3m2 0h4m1 0h2M2 24.5h2m2 0h1m1 0h1m3 0h3m2 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h2m1 0h2M1 25.5h2m1 0h1m1 0h4m1 0h1m3 0h2m1 0h2m4 0h2m2 0h1m2 0h2m2 0h2M1 26.5h4m4 0h1m1 0h4m1 0h4m1 0h1m10 0h3M1 27.5h1m1 0h5m1 0h1m1 0h3m6 0h1m1 0h1m1 0h1m1 0h1m1 0h4m4 0h2M1 28.5h1m2 0h1m1 0h1m1 0h2m1 0h1m2 0h1m2 0h1m1 0h4m4 0h1m2 0h3m1 0h1m2 0h1M1 29.5h1m1 0h1m3 0h2m1 0h1m3 0h1m2 0h2m1 0h1m2 0h12m1 0h1M9 30.5h1m1 0h1m5 0h1m1 0h1m1 0h1m1 0h2m3 0h2m3 0h2m2 0h1M1 31.5h7m2 0h2m1 0h2m1 0h1m1 0h1m2 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3M1 32.5h1m5 0h1m1 0h1m3 0h4m5 0h1m1 0h1m4 0h1m3 0h2m2 0h1M1 33.5h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1m2 0h2m2 0h1m1 0h2m1 0h7m1 0h2M1 34.5h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h3m1 0h2m1 0h1m2 0h3m1 0h4m1 0h2M1 35.5h1m1 0h3m1 0h1m1 0h2m2 0h4m2 0h1m4 0h3m2 0h1m4 0h1m2 0h1M1 36.5h1m5 0h1m4 0h2m1 0h2m2 0h4m1 0h1m2 0h2m1 0h2m1 0h1m3 0h1M1 37.5h7m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h2m1 0h4m1 0h2m3 0h2m1 0h2"></path></svg>
+  </div>
+  <div class="text-base text-gray-300">Scannez · <span class="text-tron-violet font-semibold">OpenFeedback</span></div>
+</div>
+
+<!-- Séparateur vertical -->
+<div class="w-px h-52 bg-gradient-to-b from-transparent via-gray-700 to-transparent"></div>
+
+<!-- Réseaux sociaux -->
+<div class="flex flex-col gap-5 text-left">
+  <a href="mailto:kevin@delfour.co" class="flex items-center gap-4 no-underline">
+    <div class="w-14 h-14 rounded-2xl bg-tron-violet/20 flex items-center justify-center shadow-[0_0_24px_rgba(168,85,247,0.35)]">
+      <div class="i-tabler-mail text-3xl text-tron-violet" />
+    </div>
+    <span class="text-xl text-gray-100">kevin@delfour.co</span>
+  </a>
+  <a href="https://github.com/kdelfour" class="flex items-center gap-4 no-underline">
+    <div class="w-14 h-14 rounded-2xl bg-tron-cyan/20 flex items-center justify-center shadow-[0_0_24px_rgba(0,217,255,0.35)]">
+      <div class="i-tabler-brand-github text-3xl text-tron-cyan" />
+    </div>
+    <span class="text-xl text-gray-100">github.com/kdelfour</span>
+  </a>
+  <a href="https://linkedin.com/in/kevindelfour" class="flex items-center gap-4 no-underline">
+    <div class="w-14 h-14 rounded-2xl bg-tron-magenta/20 flex items-center justify-center shadow-[0_0_24px_rgba(255,46,154,0.35)]">
+      <div class="i-tabler-brand-linkedin text-3xl text-tron-magenta" />
+    </div>
+    <span class="text-xl text-gray-100">linkedin.com/in/kevindelfour</span>
+  </a>
 </div>
 
 </div>
 
-<div class="mt-16 text-sm text-gray-600">
+<div class="text-sm text-gray-600">
   Tech'Work Lyon · 18 juin 2026 · Track Craft
 </div>
 
 </div>
 
+</div>
+
 <!--
-**Intention** — clôture chaleureuse, ouverture sur le Q&A, contacts visibles.
+**Intention** — clôture chaleureuse, ouverture sur le Q&A, contacts + QR feedback visibles.
 **Points clés** —
 - "Merci à vous."
 - attendre les applaudissements puis ouvrir : "Des questions ? Des objections ? Des contre-exemples ?"
 - "Et la question d'ouverture : vous, mécanique ou quartz ?"
 - pendant le Q&A, laisser cette slide affichée — les contacts restent visibles
+- inviter la salle à scanner le QR : "Et si le talk vous a parlé, votre avis sur OpenFeedback me ferait super plaisir."
 **Connexion** — fin du deck. Q&A jusqu'à 16:50.
 **Repère temporel** — 42:00 → 50:00 (Q&A ~8 min)
 **Jeu** — sourire. Saluer. Boire de l'eau. Attendre la première question avec patience.
