@@ -94,7 +94,7 @@ class: text-center
 
 <div class="mt-16 inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400">
   <span class="w-2 h-2 rounded-full bg-tron-cyan animate-pulse inline-block"></span>
-  Kevin Delfour · CTO · Track Craft
+  Kevin Delfour, Lead dev @ Second Brain
 </div>
 
 </div>
@@ -126,7 +126,7 @@ title: "Qui parle ?"
 <h1 class="text-5xl font-orbitron font-black mb-8">Kevin Delfour</h1>
 
 <div class="text-2xl text-gray-300 mb-10">
-  CTO · Dev depuis <span class="text-tron-cyan font-bold">15+ ans</span> · Défenseur du <span class="text-tron-magenta">craft</span>
+  Lead Dev - exCTO · Dev depuis <span class="text-tron-cyan font-bold">18+ ans</span> · Défenseur du <span class="text-tron-magenta">craft</span>
 </div>
 
 <div class="grid grid-cols-3 gap-4 text-sm text-gray-400">
@@ -147,7 +147,7 @@ title: "Qui parle ?"
 </div>
 
 <div class="mt-10 text-base text-gray-500 italic">
-  Et accessoirement, fan de montres mécaniques. On va y revenir.
+  Et accessoirement, fan d'horlogerie. On va y revenir.
 </div>
 
 </div>
@@ -1575,7 +1575,7 @@ title: "Le sort des 4 complications"
   <div class="grid grid-cols-[210px_160px_1fr] gap-5 items-center py-2.5">
     <div class="font-mono font-black text-lg text-tron-orange">Design Patterns</div>
     <div class="font-orbitron text-[10px] tracking-[0.25em] uppercase text-tron-orange">se scinde</div>
-    <div class="text-gray-300 text-base leading-snug">Le vocabulaire partagé reste. L'<span class="text-white">abstraction prophylactique</span> tombe.</div>
+    <div class="text-gray-300 text-base leading-snug">Le vocabulaire partagé reste. L'<span class="text-white">abstraction préventive</span> tombe.</div>
   </div>
 
   <div class="grid grid-cols-[210px_160px_1fr] gap-5 items-center py-2.5">
@@ -1604,7 +1604,7 @@ title: "Le sort des 4 complications"
 **Points clés** —
 - "Souvenez-vous des 4 béquilles de l'Acte II. La régénération, est-ce qu'elle les jette ? Non. Elle les déplace."
 - DRY → "tient, et monte d'un cran : du fichier au repo. C'est la convention forte."
-- Patterns → "se scinde : le vocabulaire partagé reste, l'abstraction prophylactique tombe."
+- Patterns → "se scinde : le vocabulaire partagé reste, l'abstraction préventive tombe."
 - Hexagonale → "s'assouplit : frontières fonctionnelles, pas pureté stricte."
 - SOLID → "se contextualise : le curseur bouge selon régénérable ou non."
 - chute : "Aucun principe ne disparaît. C'est leur version DOGMATIQUE qui tombe."
@@ -1842,11 +1842,6 @@ si on le jette ? »
 </div>
 </div>
 </div>
-
-<div class="mt-8 text-center text-base text-gray-400 italic max-w-3xl">
-  Notez ce qui n'est <span class="text-white font-bold">plus en haut de la liste</span>.
-</div>
-
 </div>
 
 <!--
@@ -1939,7 +1934,7 @@ title: "Ce que j'ai abandonné"
 <div class="flex items-start gap-3 p-3 rounded-xl bg-tron-orange/5 border border-tron-orange/20">
   <div class="i-tabler-x text-xl text-tron-orange mt-1 flex-shrink-0" />
   <div>
-    <div class="font-bold text-white">Les abstractions prophylactiques</div>
+    <div class="font-bold text-white">Les abstractions préventives</div>
     <div class="text-sm text-gray-400">"Au cas où on changerait d'implémentation un jour" — l'IA fait l'extraction quand on en a vraiment besoin.</div>
   </div>
 </div>

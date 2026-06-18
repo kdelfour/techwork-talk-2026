@@ -576,7 +576,7 @@
 >
 > **L'obsession de la pureté des couches.** Si la régénération est facile, l'isolation parfaite n'est plus la priorité absolue. Une violation pragmatique, qu'on documente, qu'on assume, qu'on régénérera proprement plus tard si besoin — ça coûte beaucoup moins cher que la pureté à tout prix.
 >
-> **Les abstractions prophylactiques.** Vous savez : *« on va extraire l'interface, au cas où on changerait d'implémentation un jour ».* L'interface qui a une seule implémentation et qui en aura une seule pendant cinq ans. **[pause]** L'IA fait l'extraction quand on en a vraiment besoin. Plus jamais d'abstraction préventive juste pour montrer qu'on connaît SOLID.
+> **Les abstractions préventives.** Vous savez : *« on va extraire l'interface, au cas où on changerait d'implémentation un jour ».* L'interface qui a une seule implémentation et qui en aura une seule pendant cinq ans. **[pause]** L'IA fait l'extraction quand on en a vraiment besoin. Plus jamais d'abstraction préventive juste pour montrer qu'on connaît SOLID.
 >
 > **Les débats dogmatiques.** Repository ou DAO. Controller ou Handler. UseCase ou Service. Si l'équipe perd deux jours à choisir, c'est deux jours non livrés. Convention forte au début, et on avance. On ré-aligne plus tard si besoin.
 >
