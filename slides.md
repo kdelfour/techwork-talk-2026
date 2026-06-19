@@ -4,8 +4,6 @@ title: Devons-nous sacrifier la qualité avec l'IA ?
 info: |
   Tech'Work Lyon 2026 — Track Craft
   Talk de Kevin Delfour, CTO — 18 juin 2026
-class: chatgpt-slide
-clicks: 5
 drawings:
   persist: false
 transition: slide-left
@@ -13,6 +11,75 @@ mdc: true
 fonts:
   sans: 'Space Grotesk'
   mono: 'JetBrains Mono'
+class: text-center
+---
+
+<TronGrid color="#00d9ff" :opacity="0.14" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full">
+
+<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-cyan mb-6 font-orbitron">
+  Tech'Work Lyon · 18 juin 2026
+</div>
+
+<div class="max-w-5xl mx-auto">
+  <GradientTitle size="5xl" variant="tron">
+    Devons-nous sacrifier<br/>
+    la qualité avec l'IA ?
+  </GradientTitle>
+</div>
+
+<div class="mt-16 inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400">
+  <span class="w-2 h-2 rounded-full bg-tron-cyan animate-pulse inline-block"></span>
+  Kevin Delfour, Lead dev @ Second Brain
+</div>
+
+</div>
+
+<!--
+**Intention** — ouverture "normale" : le titre est à l'écran, tout a l'air prêt. On joue le démarrage classique pour mieux casser juste après avec l'erreur.
+**Points clés** —
+- annoncer le titre, sourire, poser le décor : "On va parler IA, qualité, craft — en passant par les montres"
+- faire mine de lancer la vraie première slide…
+**Connexion** — on "lance" la prez → ÉCRAN D'ERREUR (slide suivante).
+**Repère temporel** — 0:00 → 0:20
+**Jeu** — laisser la slide afficher 5-8s en silence, puis enchaîner sur le bug.
+-->
+
+---
+clicks: 1
+---
+
+<TronGrid color="#ff8c00" :opacity="0.06" />
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full w-full font-mono text-sm leading-snug">
+
+<div class="w-full max-w-xl mx-auto text-left">
+<div class="text-gray-400"><span class="text-tron-cyan">❯</span> npm run dev</div>
+<div class="mt-2"><span class="text-[#ff5f56] font-bold">✗ ERROR</span><span class="text-gray-300"> — aucune slide trouvée.</span></div>
+<div class="pl-4 text-gray-500">Cannot resolve <span class="text-tron-magenta">./slides.md</span> — 0 slides loaded.</div>
+<div v-if="$clicks >= 1" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" class="mt-2">
+<div class="text-gray-400"><span class="text-tron-cyan">❯</span> tentative de récupération…</div>
+<div class="pl-4 text-[#ff5f56]">✗ échec. il est {{ new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) }}.</div>
+</div>
+<div class="mt-2 text-gray-400"><span class="text-tron-cyan">❯</span> <span class="inline-block w-2 h-[1em] bg-tron-cyan/80 align-middle animate-pulse"></span></div>
+</div>
+
+</div>
+
+<!--
+**Intention** — faux départ méta : on "lance" la prez et… elle n'existe pas. On installe la panique du dev qui a zappé de préparer, et on justifie le réflexe 2026 : demander à l'IA. Rampe vers le gag ChatGPT.
+**Déroulé (clics)** —
+0. laisser l'écran d'erreur s'afficher, jouer la surprise/le malaise — "euh…"
+1. "récupération… échec, il est [heure réelle affichée en direct]" — sourire en coin, regard complice → on dégaine ChatGPT
+**Connexion** — enchaîner direct sur la conversation ChatGPT (slide suivante).
+**Repère temporel** — 0:20 → 0:40
+**Jeu** — vendre la panique sans en faire trop ; rester court avant de dégainer ChatGPT.
+-->
+
+---
+class: chatgpt-slide
+clicks: 5
 ---
 
 <TronGrid color="#10a37f" :opacity="0.06" />
@@ -68,46 +135,9 @@ fonts:
 3. "c'est pas le bon auditoire" — jouer l'agacement complice
 4. deuxième réponse "militante" : monter d'un cran, poing levé pour le fun
 5. punchline : redescendre, sourire — "l'IA peut aider, mais pas là" → bascule vers le vrai sujet
-**Connexion** — "Bon. Blague à part, c'est exactement de ça qu'on va parler." → slide titre
+**Connexion** — "Bon. Blague à part, c'est exactement de ça qu'on va parler." → "Qui parle ?"
 **Repère temporel** — 0:00 → 0:45
 **Jeu** — ne pas se presser entre les clics, laisser les rires retomber avant d'enchaîner.
--->
-
----
-class: text-center
----
-
-<TronGrid color="#00d9ff" :opacity="0.14" />
-
-<div class="relative z-10 flex flex-col items-center justify-center h-full">
-
-<div class="text-xs font-bold tracking-[0.4em] uppercase text-tron-cyan mb-6 font-orbitron">
-  Tech'Work Lyon · 18 juin 2026
-</div>
-
-<div class="max-w-5xl mx-auto">
-  <GradientTitle size="5xl" variant="tron">
-    Devons-nous sacrifier<br/>
-    la qualité avec l'IA ?
-  </GradientTitle>
-</div>
-
-<div class="mt-16 inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400">
-  <span class="w-2 h-2 rounded-full bg-tron-cyan animate-pulse inline-block"></span>
-  Kevin Delfour, Lead dev @ Second Brain
-</div>
-
-</div>
-
-<!--
-**Intention** — accrocher la salle visuellement, planter le sujet, semer l'analogie horlogère.
-**Points clés** —
-- annoncer le titre, sourire
-- "On va parler IA et craft, mais on va le faire en passant par les montres"
-- ne PAS trop dévoiler le fil rouge ici, juste le suggérer
-**Connexion** — vers slide 2 : "Avant de commencer, un mot sur qui vous parle"
-**Repère temporel** — 0:00 → 0:30
-**Jeu** — laisser la slide afficher 5-8s en silence pour que la salle absorbe
 -->
 
 ---
