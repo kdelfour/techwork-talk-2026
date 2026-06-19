@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build",
-    "export": "slidev export",
+    "export": "bash export-pdf.sh",
+    "export:native": "slidev export",
     "presenter": "slidev --remote"
   },
   "dependencies": {

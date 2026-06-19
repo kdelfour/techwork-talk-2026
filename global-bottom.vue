@@ -2,7 +2,7 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useNav } from '@slidev/client'
 
-const { total, currentSlideNo } = useNav()
+const { total, currentSlideNo, isPrintMode } = useNav()
 
 // ── Timer global ──
 const elapsedSec = ref(0)
@@ -43,11 +43,11 @@ const statusText = computed(() => {
 
 // ── Phases du talk : 3 actes + intro/final ──
 const phases = [
-  { label: 'Intro',          start: 1,  end: 5,  color: '#9ca3af' },
-  { label: 'L\'héritage',    start: 6,  end: 11, color: '#00d9ff' },
-  { label: 'La crise',       start: 12, end: 28, color: '#ff8c00' },
-  { label: 'Le renouveau',   start: 29, end: 43, color: '#ff2e9a' },
-  { label: 'Final',          start: 44, end: 46, color: '#a855f7' },
+  { label: 'Intro',          start: 1,  end: 6,  color: '#9ca3af' },
+  { label: 'L\'héritage',    start: 7,  end: 12, color: '#00d9ff' },
+  { label: 'La crise',       start: 13, end: 29, color: '#ff8c00' },
+  { label: 'Le renouveau',   start: 30, end: 44, color: '#ff2e9a' },
+  { label: 'Final',          start: 45, end: 47, color: '#a855f7' },
 ]
 
 // Dernière phase dont le start est atteint : robuste aux ajouts de slides
@@ -65,7 +65,8 @@ const currentPhaseColor = computed(() => phases[currentPhaseIndex.value]?.color 
 
 <template>
   <!-- ── Barre de progression par phases en bas ── -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 pointer-events-none">
+  <!-- Masquée à l'export PDF/PNG : hors navigation, currentSlideNo reste figé à 1 -->
+  <div v-if="!isPrintMode" class="fixed bottom-0 left-0 right-0 z-50 pointer-events-none">
 
     <!-- Label de phase + timer discret + numéro de slide -->
     <div class="flex items-center justify-between px-4 mb-1">

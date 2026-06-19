@@ -9,3 +9,4 @@ dist/
 .env.*.local
 .cache/
 slides-export.pdf
+.export-png/
